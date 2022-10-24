@@ -1,0 +1,3072 @@
+[
+    {
+        "url": "https://patents.google.com/xhr/parse?text=us9145048&cursor=9&exp=",
+        "response": {
+            "error_no_patents_found": false,
+            "results": [
+                {
+                    "result": {
+                        "id": "patent/US9145048B2/en",
+                        "number": "US9145048B2",
+                        "title": "Apparatus for hybrid engine control and method of manufacture same "
+                    }
+                },
+                {
+                    "result": {
+                        "id": "patent/US6182754B1/en",
+                        "number": "US6182754B1",
+                        "title": "Helical scraper apparatus for a reciprocating sucker rod "
+                    }
+                }
+            ]
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/parse?text=us914504856&cursor=11&exp=",
+        "response": {
+            "error_no_patents_found": true
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/parse?text=US200465&cursor=8&exp=",
+        "response": {
+            "error_no_patents_found": false,
+            "results": [
+                {
+                    "result": {
+                        "id": "patent/US200465A/en",
+                        "number": "US200465A",
+                        "title": "Improvement in hay-elevators "
+                    }
+                }
+            ]
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/parse?text=us91&cursor=4&exp=",
+        "response": {
+            "error_no_patents_found": false,
+            "results": [
+                {
+                    "query_url": "q=us91"
+                }
+            ]
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/parse?text=3tsfvdgdgfdsg&cursor=13&exp=",
+        "response": {
+            "error_no_patents_found": false,
+            "results": [
+                {
+                    "query_url": "q=3tsfvdgdgfdsg"
+                }
+            ]
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/query?url=q%3D(hybrid%2BAND%2Bengine)%26oq%3D(hybrid%2BAND%2Bengine)&exp=&tags=",
+        "response": {
+            "results": {
+                "total_num_results": 135831,
+                "total_num_pages": 100,
+                "many_results": false,
+                "num_page": 0,
+                "cluster": [
+                    {
+                        "result": [
+                            {
+                                "id": "patent/RU2405241C2/en",
+                                "rank": 0,
+                                "patent": {
+                                    "title": " Device and method of controlling <b>hybrid engine</b>",
+                                    "snippet": " 1. A device for controlling a <b>hybrid motor</b>, which has a multiphase stator winding, made in the form of independent parallel sections, comprising: a code encoder mounted on the rotor of the <b>hybrid engine</b> and working in conjunction with a sensor to detect the rotor pole; a sensor sensor for &hellip;",
+                                    "priority_date": "2006-01-10",
+                                    "filing_date": "2007-01-10",
+                                    "grant_date": "2010-11-27",
+                                    "publication_date": "2010-11-27",
+                                    "inventor": "Донг Рюл ШИН (KR)",
+                                    "assignee": "Ени Ко., Лтд.",
+                                    "publication_number": "RU2405241C2",
+                                    "language": "en",
+                                    "thumbnail": "bd/ce/f0/b012716f40c991/00000002.png",
+                                    "pdf": "ef/dd/26/8f2df120d1b615/RU2405241C2.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "10/6e/0e/58b575a93fd9c2/00000002.png",
+                                            "full": "fb/74/05/99c1f6b15d2949/00000002.png"
+                                        },
+                                        {
+                                            "thumbnail": "03/54/f6/d5717e0f688c40/00000003.png",
+                                            "full": "90/c3/62/cad7302b8bb764/00000003.png"
+                                        },
+                                        {
+                                            "thumbnail": "10/0c/d6/c1659c91b502b9/00000004.png",
+                                            "full": "50/8d/e3/4f2b22fe9fe5da/00000004.png"
+                                        },
+                                        {
+                                            "thumbnail": "77/a7/f4/f29d1bb56111ac/00000005.png",
+                                            "full": "c7/de/e8/0b0bc41dd09e58/00000005.png"
+                                        },
+                                        {
+                                            "thumbnail": "ca/70/ff/c311a992c74235/00000006.png",
+                                            "full": "c1/13/d1/0d562660673c62/00000006.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "KR",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "BR",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "RU",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US8141360B1/en",
+                                "rank": 1,
+                                "patent": {
+                                    "title": " <b>Hybrid</b> gas turbine and internal combustion <b>engine</b>",
+                                    "snippet": " supplying compressed air from the compressor to a heat exchanger in the internal combustion <b>engine</b>; and, delivering the compressed air from the heat exchanger to the combustor to maintain the shaft speed sufficient for starting the gas turbine <b>engine</b>. 4. The process of operating a <b>hybrid engine</b> of",
+                                    "priority_date": "2005-10-18",
+                                    "filing_date": "2005-10-18",
+                                    "grant_date": "2012-03-27",
+                                    "publication_date": "2012-03-27",
+                                    "inventor": "David J Huber",
+                                    "assignee": "Florida Turbine Technologies, Inc.",
+                                    "publication_number": "US8141360B1",
+                                    "language": "en",
+                                    "thumbnail": "c0/c9/ca/6de4818cb24873/US08141360-20120327-D00000.png",
+                                    "pdf": "85/9a/e5/848c153515fef7/US8141360.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "b8/29/bb/a0c22654d16aef/US08141360-20120327-D00000.png",
+                                            "full": "f3/26/6a/4fc78f1e7e36fa/US08141360-20120327-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "a0/88/14/2c7fb5f68ed1e9/US08141360-20120327-D00001.png",
+                                            "full": "ad/d2/48/6ea40c5d9cf2e4/US08141360-20120327-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "af/42/b4/cf0ab4a7620c6b/US08141360-20120327-D00002.png",
+                                            "full": "5b/88/27/de795d05b07087/US08141360-20120327-D00002.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/KR101008392B1/en",
+                                "rank": 2,
+                                "patent": {
+                                    "title": " Split-cycle air <b>hybrid engine</b>",
+                                    "snippet": " 2. The fuel according to claim 1, wherein during one of the internal combustion <b>engine</b> (ICE) mode and the preload air power (PAP) mode, the fuel is 5 to 5 after the power piston reaches its top dead center (TDC) position. A split-cycle air <b>hybrid engine</b> characterized by ignition at a crank angle ( &hellip;",
+                                    "priority_date": "2006-01-07",
+                                    "filing_date": "2006-11-21",
+                                    "grant_date": "2011-01-13",
+                                    "publication_date": "2011-01-13",
+                                    "inventor": "살바토레 씨. 스쿠데리",
+                                    "assignee": "스쿠데리 그룹 엘엘씨",
+                                    "publication_number": "KR101008392B1",
+                                    "language": "en",
+                                    "thumbnail": "13/ec/2b/30d872f2c50551/112008054942691-pct00004.png",
+                                    "pdf": "0e/e2/3b/73e3d6614870a6/KR101008392B1.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "2d/4f/7a/53a56b05607453/112008054942691-pct00004.png",
+                                            "full": "13/4e/e4/0bde7ab0db88ca/112008054942691-pct00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "9e/7d/cc/5abd0c094ae6c3/112008054942691-pct00005.png",
+                                            "full": "20/cc/cd/26e843f966d9f8/112008054942691-pct00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "da/88/8b/59f2a8b0c0af5c/112008054942691-pct00006.png",
+                                            "full": "51/78/82/f8c96e8968e148/112008054942691-pct00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "d6/1b/9b/dba871ee59b530/112008054942691-pct00007.png",
+                                            "full": "24/5e/9a/7c351365801f9d/112008054942691-pct00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "a8/66/7c/f495e3f38efb07/112008054942691-pct00008.png",
+                                            "full": "e8/bb/08/2c4998bf696c88/112008054942691-pct00008.png"
+                                        },
+                                        {
+                                            "thumbnail": "13/3c/51/f093096d50cc17/112008054942691-pct00009.png",
+                                            "full": "95/7c/81/22e42e7ae34f8b/112008054942691-pct00009.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "KR",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "AR",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "AU",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "BR",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CA",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "ES",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "MY",
+                                                    "best_patent_stage": {
+                                                        "state": "UNKNOWN"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "RU",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "TW",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "ZA",
+                                                    "best_patent_stage": {
+                                                        "state": "UNKNOWN"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US8245802B2/en",
+                                "rank": 3,
+                                "patent": {
+                                    "title": " Automotive <b>hybrid engine</b> assist system",
+                                    "snippet": " a turbocharger comprising: a compressor that is disposed in an induction system of said internal combustion <b>engine</b>, and that compresses intake gas; a turbine that is mounted coaxially onto a rotating shaft of said compressor, that is disposed in an exhaust system of said internal combustion <b>engine</b>;",
+                                    "priority_date": "2006-11-15",
+                                    "filing_date": "2007-10-10",
+                                    "grant_date": "2012-08-21",
+                                    "publication_date": "2012-08-21",
+                                    "inventor": "Masaya Inoue",
+                                    "assignee": "Mitsubishi Electric Corporation",
+                                    "publication_number": "US8245802B2",
+                                    "language": "en",
+                                    "thumbnail": "43/c8/b7/50d053187921c2/US08245802-20120821-D00000.png",
+                                    "pdf": "93/fc/3a/bd7a4685df85b7/US8245802.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "bb/3f/5d/018e0622faf716/US08245802-20120821-D00000.png",
+                                            "full": "8a/5e/5f/77e64fef55f0af/US08245802-20120821-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "f7/58/ed/1fc90ab41a56f3/US08245802-20120821-D00001.png",
+                                            "full": "da/6e/18/696cdf3ed9f69c/US08245802-20120821-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "b0/2e/61/66fcd2f0441281/US08245802-20120821-D00002.png",
+                                            "full": "26/2e/d8/eee9bc5ac1eabd/US08245802-20120821-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "33/bc/b5/b6bcb9b1930925/US08245802-20120821-D00003.png",
+                                            "full": "e0/71/14/4efb3be5b81324/US08245802-20120821-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "e4/e9/52/f0bc277a8973c1/US08245802-20120821-D00004.png",
+                                            "full": "de/92/0b/4b9e26f64bef51/US08245802-20120821-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "58/4e/6d/a87167000a233d/US08245802-20120821-D00005.png",
+                                            "full": "2c/94/80/1747fe855ef256/US08245802-20120821-D00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "35/9f/8b/98a96184765d6d/US08245802-20120821-D00007.png",
+                                            "full": "da/1e/ba/3ce3c5d29e6fec/US08245802-20120821-D00007.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US7279855B2/en",
+                                "rank": 4,
+                                "patent": {
+                                    "title": " Electric drive device for vehicle and <b>hybrid engine</b>/<b>motor</b>-type four wheel drive &hellip;",
+                                    "snippet": " 29. An electric drive system for a <b>hybrid engine</b>/<b>motor</b> type vehicle in which either front wheels or rear wheels are driven with an <b>engine</b> and the other wheels of them are driven with a DC <b>motor</b>, comprising: a rectifier-equipped alternator that is driven by said <b>engine</b> to generate electric power for &hellip;",
+                                    "priority_date": "2003-04-04",
+                                    "filing_date": "2004-04-02",
+                                    "grant_date": "2007-10-09",
+                                    "publication_date": "2007-10-09",
+                                    "inventor": "Kazuo Tahara",
+                                    "assignee": "Hitachi, Ltd.",
+                                    "publication_number": "US7279855B2",
+                                    "language": "en",
+                                    "thumbnail": "60x80/US7279855B2/US07279855-20071009-D00000.png",
+                                    "pdf": "d8/5d/47/66b1d6529a1071/US7279855B2.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00000.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00001.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00002.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00003.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00004.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00005.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00006.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00007.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00008.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00008.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00009.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00009.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00010.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00010.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00011.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00011.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00012.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00012.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00013.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00013.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00014.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00014.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00015.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00015.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00016.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00016.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00017.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00017.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00018.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00018.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00019.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00019.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00020.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00020.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00021.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00021.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00022.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00022.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00023.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00023.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7279855B2/US07279855-20071009-D00024.png",
+                                            "full": "US7279855B2/US07279855-20071009-D00024.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US7621262B2/en",
+                                "rank": 5,
+                                "patent": {
+                                    "title": " <b>Hybrid</b> thermal energy conversion for HCCI heated intake charge system",
+                                    "snippet": " 1. A method of operating an internal combustion <b>engine</b> coupled in a <b>hybrid</b> powertrain, comprising: extracting thermal and electrical waste energy from components of an electrical power system of the <b>hybrid</b> powertrain; and during HCCI operation: adjusting intake air temperature of the <b>engine</b> by &hellip;",
+                                    "priority_date": "2007-05-10",
+                                    "filing_date": "2007-05-10",
+                                    "grant_date": "2009-11-24",
+                                    "publication_date": "2009-11-24",
+                                    "inventor": "Michael W. Zubeck",
+                                    "assignee": "Ford Global Technologies, Llc",
+                                    "publication_number": "US7621262B2",
+                                    "language": "en",
+                                    "thumbnail": "60x80/US7621262B2/US07621262-20091124-D00000.png",
+                                    "pdf": "8e/a9/a2/9c0276d11d8ba7/US7621262.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00000.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00001.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00002.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00003.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00004.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00005.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00006.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00007.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00008.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00008.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00009.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00009.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00010.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00010.png"
+                                        },
+                                        {
+                                            "thumbnail": "thumbnails/US7621262B2/US07621262-20091124-D00011.png",
+                                            "full": "US7621262B2/US07621262-20091124-D00011.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US9133758B2/en",
+                                "rank": 6,
+                                "patent": {
+                                    "title": " Split-cycle air-<b>hybrid engine</b> with air expander and firing mode",
+                                    "snippet": " 3. The <b>engine</b> of claim 1 , wherein, in the AEF mode, the XovrE valve is closed at 22 degrees CA or less after top dead center of the expansion piston (ATDCe). 4. The <b>engine</b> of claim 1 , wherein, in the AEF mode, the XovrE valve is closed at a position between 7 and 22 degrees CA after top dead center &hellip;",
+                                    "priority_date": "2010-03-15",
+                                    "filing_date": "2014-02-13",
+                                    "grant_date": "2015-09-15",
+                                    "publication_date": "2015-09-15",
+                                    "inventor": "Riccardo Meldolesi",
+                                    "assignee": "Scuderi Group, Inc.",
+                                    "publication_number": "US9133758B2",
+                                    "language": "en",
+                                    "thumbnail": "51/fb/ae/f818c84f2b6236/US09133758-20150915-D00000.png",
+                                    "pdf": "de/69/2e/32e490770ddd79/US9133758.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "bb/65/17/996a63f1fad9f2/US09133758-20150915-D00000.png",
+                                            "full": "1d/8d/60/9c0633fbfa25f7/US09133758-20150915-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "f8/14/47/851f992f07f964/US09133758-20150915-D00001.png",
+                                            "full": "4e/9a/c1/fec02e6df0dc72/US09133758-20150915-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "6b/f6/d2/f5750b64265869/US09133758-20150915-D00002.png",
+                                            "full": "70/9f/ae/6c573127f70671/US09133758-20150915-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "e0/e8/9f/391d53e048ce43/US09133758-20150915-D00003.png",
+                                            "full": "9b/35/55/19f34d674c1779/US09133758-20150915-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "99/6f/80/462f52be2b34c9/US09133758-20150915-D00004.png",
+                                            "full": "30/f2/82/f467f76bbb8c66/US09133758-20150915-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "6b/f6/ef/6da99cf35d355f/US09133758-20150915-D00005.png",
+                                            "full": "e4/3a/02/9888dac8ea3b1c/US09133758-20150915-D00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "40/97/dd/f41507e55d145d/US09133758-20150915-D00006.png",
+                                            "full": "d7/92/90/15c9987619d1b2/US09133758-20150915-D00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "f2/70/34/6a4e6be61726f0/US09133758-20150915-D00007.png",
+                                            "full": "a5/2c/02/630c094193a17d/US09133758-20150915-D00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "8d/bb/47/fd6b47aed76aab/US09133758-20150915-D00008.png",
+                                            "full": "a9/4c/1e/65517149ccfa97/US09133758-20150915-D00008.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "KR",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "AU",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "BR",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CA",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CL",
+                                                    "best_patent_stage": {
+                                                        "state": "UNKNOWN"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "MX",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "RU",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "ZA",
+                                                    "best_patent_stage": {
+                                                        "state": "UNKNOWN"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/CN100507239C/en",
+                                "rank": 7,
+                                "patent": {
+                                    "title": " <b>Hybrid engine</b> accessory power system",
+                                    "snippet": " A system for generating accessory power from a gas turbine <b>engine</b> is provided by the present invention. The system includes an electronic control device for monitoring at least one parameter which provides information about an incipient change in power demand, a control valve operated by the &hellip;",
+                                    "priority_date": "2003-10-27",
+                                    "filing_date": "2004-10-26",
+                                    "grant_date": "2009-07-01",
+                                    "publication_date": "2009-07-01",
+                                    "inventor": "T·M莫里斯",
+                                    "assignee": "联合工艺公司",
+                                    "publication_number": "CN100507239C",
+                                    "language": "en",
+                                    "thumbnail": "",
+                                    "pdf": "eb/59/c2/f6fd6a60e3e281/CN100507239C.pdf",
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "WO",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "EP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "JP",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "AT",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "DE",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "RU",
+                                                    "best_patent_stage": {
+                                                        "state": "NOT_ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "UA",
+                                                    "best_patent_stage": {
+                                                        "state": "UNKNOWN"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US8337359B2/en",
+                                "rank": 8,
+                                "patent": {
+                                    "title": " <b>Hybrid engine</b> system",
+                                    "snippet": " 13. The system of claim 11 wherein the <b>motor</b>-generator further comprises a kinetic energy storage device. 14. The system of claim 11 wherein the first <b>engine</b> comprises a first opposed-piston, opposed-cylinder <b>engine</b> and the second <b>engine</b> comprises a second opposed-piston, opposed-cylinder <b>engine</b>.",
+                                    "priority_date": "2008-08-27",
+                                    "filing_date": "2009-08-27",
+                                    "grant_date": "2012-12-25",
+                                    "publication_date": "2012-12-25",
+                                    "inventor": "Peter Hofbauer",
+                                    "assignee": "EcoMotors International",
+                                    "publication_number": "US8337359B2",
+                                    "language": "en",
+                                    "thumbnail": "81/86/9f/db2b390bc88406/US08337359-20121225-D00000.png",
+                                    "pdf": "a9/25/31/ad6f8aead024a3/US8337359.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "9a/2a/b3/560d3166fcd54e/US08337359-20121225-D00000.png",
+                                            "full": "e4/7c/ee/9b59fc17cfcac4/US08337359-20121225-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "d2/8f/fc/2f26a42b10718b/US08337359-20121225-D00002.png",
+                                            "full": "1e/95/27/3b3f70b0ffa142/US08337359-20121225-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "5b/54/a4/a158170c722125/US08337359-20121225-D00003.png",
+                                            "full": "5d/e1/e1/16e8a08cafadcf/US08337359-20121225-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "e7/21/f8/ab64cd3ddc84c8/US08337359-20121225-D00004.png",
+                                            "full": "94/f7/31/2d10d9bdf3747a/US08337359-20121225-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "f0/39/36/d96769752063d3/US08337359-20121225-D00006.png",
+                                            "full": "84/1d/78/3f1f989274eb4e/US08337359-20121225-D00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "14/7c/ab/c35b2315e6cef1/US08337359-20121225-D00007.png",
+                                            "full": "11/c1/fb/796af4405686c7/US08337359-20121225-D00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "79/fc/83/0752b8108c8090/US08337359-20121225-D00013.png",
+                                            "full": "14/e0/a7/f31e469c3fe298/US08337359-20121225-D00013.png"
+                                        },
+                                        {
+                                            "thumbnail": "94/16/74/948cfe65a824d4/US08337359-20121225-D00014.png",
+                                            "full": "e9/7c/e9/557f046c80f8c5/US08337359-20121225-D00014.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            },
+                            {
+                                "id": "patent/US10562512B2/en",
+                                "rank": 9,
+                                "patent": {
+                                    "title": " Methods and systems for operating a driveline of a <b>hybrid engine</b> powertrain",
+                                    "snippet": " 16. The method of claim 15 , further comprising adjusting torque of an <b>engine</b> during the upshift via adjusting spark timing such that torque delivered to wheels of the vehicle via the driveline does not cause the vehicle stability control parameter to exceed the vehicle stability control threshold.",
+                                    "priority_date": "2016-10-31",
+                                    "filing_date": "2017-10-26",
+                                    "grant_date": "2020-02-18",
+                                    "publication_date": "2020-02-18",
+                                    "inventor": "Kenneth James Miller",
+                                    "assignee": "Ford Global Technologies. Llc",
+                                    "publication_number": "US10562512B2",
+                                    "language": "en",
+                                    "thumbnail": "3a/21/b6/60c67b5dfb239b/US10562512-20200218-D00000.png",
+                                    "pdf": "94/44/46/a2b0b024cbe904/US10562512.pdf",
+                                    "figures": [
+                                        {
+                                            "thumbnail": "d3/00/f6/34023863c486f9/US10562512-20200218-D00000.png",
+                                            "full": "51/5c/f9/725388b9894675/US10562512-20200218-D00000.png"
+                                        },
+                                        {
+                                            "thumbnail": "60/ba/a1/ed7ed6ca4bb944/US10562512-20200218-D00001.png",
+                                            "full": "38/4d/07/18b16101513e1b/US10562512-20200218-D00001.png"
+                                        },
+                                        {
+                                            "thumbnail": "8e/c0/a5/40b24b34482db3/US10562512-20200218-D00002.png",
+                                            "full": "c8/7a/be/8301404b3ea384/US10562512-20200218-D00002.png"
+                                        },
+                                        {
+                                            "thumbnail": "c2/9b/e6/b01fc4e51021b9/US10562512-20200218-D00003.png",
+                                            "full": "68/8b/25/989c0e8c1e7243/US10562512-20200218-D00003.png"
+                                        },
+                                        {
+                                            "thumbnail": "f8/86/ee/a2b909a953dff1/US10562512-20200218-D00004.png",
+                                            "full": "d9/87/25/a987fbae504197/US10562512-20200218-D00004.png"
+                                        },
+                                        {
+                                            "thumbnail": "6b/5d/41/70daf2f95897d2/US10562512-20200218-D00005.png",
+                                            "full": "4d/15/74/7b86c028420726/US10562512-20200218-D00005.png"
+                                        },
+                                        {
+                                            "thumbnail": "1e/0f/a9/3b153d174495a4/US10562512-20200218-D00006.png",
+                                            "full": "97/6c/7f/a613e1959be019/US10562512-20200218-D00006.png"
+                                        },
+                                        {
+                                            "thumbnail": "79/96/9d/5ba7d156757670/US10562512-20200218-D00007.png",
+                                            "full": "cf/9b/e2/70bcaacca1aba5/US10562512-20200218-D00007.png"
+                                        },
+                                        {
+                                            "thumbnail": "1d/e3/5d/78d4fe9fedb523/US10562512-20200218-D00008.png",
+                                            "full": "ae/25/15/69facaf00abf50/US10562512-20200218-D00008.png"
+                                        },
+                                        {
+                                            "thumbnail": "aa/82/32/6e311ec38724b8/US10562512-20200218-D00009.png",
+                                            "full": "8d/e4/7f/afa33459a8cb3b/US10562512-20200218-D00009.png"
+                                        },
+                                        {
+                                            "thumbnail": "67/d3/5b/0085abb35e8018/US10562512-20200218-D00010.png",
+                                            "full": "71/00/fb/e1d9dfe129dc67/US10562512-20200218-D00010.png"
+                                        },
+                                        {
+                                            "thumbnail": "eb/d1/ee/d0709a61f49bda/US10562512-20200218-D00011.png",
+                                            "full": "c4/64/8c/fc59ee2fc0315a/US10562512-20200218-D00011.png"
+                                        },
+                                        {
+                                            "thumbnail": "ac/4d/30/2cd607934dd732/US10562512-20200218-D00012.png",
+                                            "full": "d4/64/fa/eb9ed5b606786f/US10562512-20200218-D00012.png"
+                                        },
+                                        {
+                                            "thumbnail": "79/c4/0c/3ef88053188e0b/US10562512-20200218-D00013.png",
+                                            "full": "78/de/cd/c8541e75ff0b15/US10562512-20200218-D00013.png"
+                                        },
+                                        {
+                                            "thumbnail": "8f/49/e8/3f34e6d97df9fa/US10562512-20200218-D00014.png",
+                                            "full": "f6/d9/dd/0c9104eddca296/US10562512-20200218-D00014.png"
+                                        },
+                                        {
+                                            "thumbnail": "1e/16/66/aef361ebfc5216/US10562512-20200218-D00015.png",
+                                            "full": "e7/e0/28/d31529e173d611/US10562512-20200218-D00015.png"
+                                        },
+                                        {
+                                            "thumbnail": "0b/b6/67/d1dd32c06c5505/US10562512-20200218-D00016.png",
+                                            "full": "46/2d/e4/99d94cb92d64d9/US10562512-20200218-D00016.png"
+                                        },
+                                        {
+                                            "thumbnail": "f2/7a/c7/76da0723eb8bd1/US10562512-20200218-D00017.png",
+                                            "full": "4b/53/a0/3e40084a55084b/US10562512-20200218-D00017.png"
+                                        },
+                                        {
+                                            "thumbnail": "47/3f/05/34a516f3d720f0/US10562512-20200218-D00018.png",
+                                            "full": "ab/5e/b0/60199f24ad9583/US10562512-20200218-D00018.png"
+                                        },
+                                        {
+                                            "thumbnail": "88/7e/2f/47071671dc4d21/US10562512-20200218-D00019.png",
+                                            "full": "37/41/02/9d14d7ca9a8d59/US10562512-20200218-D00019.png"
+                                        },
+                                        {
+                                            "thumbnail": "09/aa/21/13b036cfa65801/US10562512-20200218-D00020.png",
+                                            "full": "db/23/ff/2106ec92ac82b3/US10562512-20200218-D00020.png"
+                                        },
+                                        {
+                                            "thumbnail": "34/6c/be/b5522127f16dd6/US10562512-20200218-D00021.png",
+                                            "full": "3d/b3/67/80806945674661/US10562512-20200218-D00021.png"
+                                        },
+                                        {
+                                            "thumbnail": "eb/5d/1d/1340faafe69d4b/US10562512-20200218-D00022.png",
+                                            "full": "c8/b2/08/4e150562a20545/US10562512-20200218-D00022.png"
+                                        },
+                                        {
+                                            "thumbnail": "33/14/a9/7ab3e6b447f07f/US10562512-20200218-D00023.png",
+                                            "full": "1a/b4/70/58d5d624c72ffc/US10562512-20200218-D00023.png"
+                                        },
+                                        {
+                                            "thumbnail": "97/a2/67/c5d6c738c7e84c/US10562512-20200218-D00024.png",
+                                            "full": "c6/d4/ea/6fd289f272781f/US10562512-20200218-D00024.png"
+                                        }
+                                    ],
+                                    "family_metadata": {
+                                        "aggregated": {
+                                            "country_status": [
+                                                {
+                                                    "country_code": "US",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                },
+                                                {
+                                                    "country_code": "CN",
+                                                    "best_patent_stage": {
+                                                        "state": "ACTIVE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "is_similar_document": false,
+                                "entity_matches": {
+                                    "additional": 0
+                                },
+                                "measure_matches": {}
+                            }
+                        ]
+                    }
+                ],
+                "chem_exhausted": false,
+                "summary": {
+                    "assignee": [
+                        {
+                            "key": "Total",
+                            "value": 1000,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 110
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 167
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 132
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 215
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 102
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 105
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 73
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 51
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 16
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1986-1989",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Toyota Jidosha Kabushiki Kaisha",
+                            "value": 103,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 13
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 24
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 12
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 12
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 11
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 17
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "GM Global Technology Operations LLC",
+                            "value": 40,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 32
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Ford Global Technologies, Llc",
+                            "value": 35,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 11
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Nissan Motor Co., Ltd.",
+                            "value": 33,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 10
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "key": "トヨタ自動車株式会社",
+                            "value": 30,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 10
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "key": "通用汽车环球科技运作公司",
+                            "value": 30,
+                            "frequency": [
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 30
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Bayerische Motoren Werke Aktiengesellschaft",
+                            "value": 22,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 20
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Daimler Ag",
+                            "value": 20,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 19
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Honda Giken Kogyo Kabushiki Kaisha",
+                            "value": 17,
+                            "frequency": [
+                                {
+                                    "key": "2001-2004",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 10
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "key": "GM Global Technology Operations LLC (n. d. Ges. d. Staates Delaware)",
+                            "value": 17,
+                            "frequency": [
+                                {
+                                    "key": "2010-2013",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 16
+                                }
+                            ]
+                        },
+                        {
+                            "key": "日産自動車株式会社",
+                            "value": 16,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Tula Technology, Inc.",
+                            "value": 13,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Denso Corporation",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2010-2013",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Chrysler Group Llc",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2007-2010",
+                                    "value": 11
+                                }
+                            ]
+                        },
+                        {
+                            "key": "ФОРД ГЛОУБАЛ ТЕКНОЛОДЖИЗ, ЭлЭлСи",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 10
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "丰田自动车株式会社",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "General Motors Corporation",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2004-2007",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Kabushiki Kaisha Toshiba",
+                            "value": 9,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Aisin Aw Co., Ltd.",
+                            "value": 9,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "inventor": [
+                        {
+                            "key": "Total",
+                            "value": 1000,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 110
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 167
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 132
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 215
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 102
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 105
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 73
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 51
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 16
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1986-1989",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Anthony H. Heap",
+                            "value": 30,
+                            "frequency": [
+                                {
+                                    "key": "2007-2010",
+                                    "value": 30
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "A·H·希普",
+                            "value": 24,
+                            "frequency": [
+                                {
+                                    "key": "2007-2010",
+                                    "value": 24
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Atsushi Tabata",
+                            "value": 15,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 9
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Yutaka Taga",
+                            "value": 14,
+                            "frequency": [
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 12
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Ryuji Ibaraki",
+                            "value": 11,
+                            "frequency": [
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 10
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Tsuyoshi Mikami",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 10
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Hiroshi Hata",
+                            "value": 10,
+                            "frequency": [
+                                {
+                                    "key": "2001-2004",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 9
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Norio Takami",
+                            "value": 8,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 6
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Hiroki Inagaki",
+                            "value": 8,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 6
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Jy-Jen F. Sah",
+                            "value": 7,
+                            "frequency": [
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Kee Yong Kim",
+                            "value": 7,
+                            "frequency": [
+                                {
+                                    "key": "2010-2013",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Алекс О'Коннор ГИБСОН",
+                            "value": 7,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 8
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Yukihiko Ideshio",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Louis J. Serrano",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Teruo Wakashiro",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Alan G. Holmes",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Ajith Kuttannair Kumar",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "key": "秀洋 大庭",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2007-2010",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "key": "David Colavincenzo",
+                            "value": 6,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ],
+                    "cpc": [
+                        {
+                            "key": "Total",
+                            "value": 1000,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 110
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 167
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 132
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 215
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 102
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 105
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 73
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 51
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 16
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1986-1989",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Y02T",
+                            "value": 882,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 94
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 140
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 112
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 190
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 94
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 94
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 69
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 50
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B60K",
+                            "value": 743,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 72
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 108
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 89
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 168
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 82
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 83
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 66
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 46
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B60W",
+                            "value": 695,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 65
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 109
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 89
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 158
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 69
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 74
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 64
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 42
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 11
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B60L",
+                            "value": 488,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 25
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 39
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 47
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 139
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 61
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 66
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 49
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 36
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 10
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1971-1974",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Y10S",
+                            "value": 410,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 45
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 107
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 39
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 25
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 27
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 49
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 55
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 43
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1974-1977",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F16H",
+                            "value": 256,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 14
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 30
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 25
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 72
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 28
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 39
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 28
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 19
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B60Y",
+                            "value": 176,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 45
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 52
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 25
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 27
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 9
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 4
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F02D",
+                            "value": 170,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 16
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 24
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 21
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 33
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 27
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 23
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 19
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F02N",
+                            "value": 116,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 17
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 18
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 18
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 13
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 11
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 13
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 15
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F02B",
+                            "value": 58,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1986-1989",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Y10T",
+                            "value": 41,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 9
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "Y02E",
+                            "value": 40,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 16
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B64D",
+                            "value": 39,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 18
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 12
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F16D",
+                            "value": 37,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 12
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F02C",
+                            "value": 29,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 6
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B60T",
+                            "value": 28,
+                            "frequency": [
+                                {
+                                    "key": "2013-2016",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1992-1995",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1980-1983",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1977-1980",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "B64C",
+                            "value": 26,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 13
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 8
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "F05D",
+                            "value": 25,
+                            "frequency": [
+                                {
+                                    "key": "2019-2022",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2016-2019",
+                                    "value": 7
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2004-2007",
+                                    "value": 1
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "H02K",
+                            "value": 23,
+                            "frequency": [
+                                {
+                                    "key": "2016-2019",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "2013-2016",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "2010-2013",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "2007-2010",
+                                    "value": 5
+                                },
+                                {
+                                    "key": "2001-2004",
+                                    "value": 4
+                                },
+                                {
+                                    "key": "1998-2001",
+                                    "value": 2
+                                },
+                                {
+                                    "key": "1995-1998",
+                                    "value": 3
+                                },
+                                {
+                                    "key": "1989-1992",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/parse?text=(hybrid%20AND%20engine)&cursor=19&exp=",
+        "response": {
+            "error_no_patents_found": false,
+            "results": [
+                {
+                    "query_url": "q=(hybrid+AND+engine)"
+                }
+            ]
+        },
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/xhr/result?id=patent%2FRU2405241C2%2Fen&qs=q%3D(hybrid%2BAND%2Bengine)%26oq%3D(hybrid%2BAND%2Bengine)&exp=",
+        "response": " HTML DOCUMENT as string ",
+        "status": 200
+    },
+    {
+        "url": "https://patents.google.com/patent/US9145048B2/en?oq=US9145048B",
+        "response": " HTML DOCUMENT as string ",
+        "status": 200,
+        "use": false
+    }
+]
