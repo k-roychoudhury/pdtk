@@ -56,8 +56,7 @@ class GoogleParseQueryResult(BaseModel):
     query_url: Union[str, None] = Field(
         None,
         title="formatted uri with the query keywords",
-        description="string containing formatted uri with the query keywords",
-        regex=r"q=.+"
+        description="string containing formatted uri with the query keywords"
     )
 
     pass # end of GoogleParseQueryResult

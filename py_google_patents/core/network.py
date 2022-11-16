@@ -53,6 +53,11 @@ async def http_get_parse_endpoint_response(text: str) -> Dict[str, Any]:
                 response.raise_for_status()
                 _data = await response.json()
     
+    except aiohttp.client_exceptions.ClientConnectorError as error:
+        # caused by socket.gaierror
+        getLibraryLogger().debug(error, exc_info=True)
+        raise
+
     except aiohttp.client_exceptions.ClientConnectionError as error:
         getLibraryLogger().debug(error, exc_info=True)
         raise
@@ -102,7 +107,12 @@ async def http_get_result_endpoint_response(id_url: str) -> str:
 
                 response.raise_for_status()
                 _data: str = await response.text()
-                
+    
+    except aiohttp.client_exceptions.ClientConnectorError as error:
+        # caused by socket.gaierror
+        getLibraryLogger().debug(error, exc_info=True)
+        raise
+
     except aiohttp.client_exceptions.ClientConnectionError as error:
         getLibraryLogger().debug(error, exc_info=True)
         raise
