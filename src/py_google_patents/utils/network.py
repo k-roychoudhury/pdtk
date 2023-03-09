@@ -10,7 +10,7 @@ from requests import (
     ConnectionError as RequestsConnectionError
 )
 
-from py_google_patents.config import get_module_logger
+from ..config import get_module_logger
 
 # module variables ============================================================
 logger: logging.Logger = get_module_logger().getChild(__name__)
