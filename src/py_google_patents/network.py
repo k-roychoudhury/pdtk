@@ -1,13 +1,6 @@
 r""" py_google_patents.network module """
 
 # importing standard modules ==================================================
-from typing import Union, Optional, List
-import logging
-import urllib.parse
-
-# importing third-party modules ===============================================
-from aiohttp import ClientSession
-from pydantic import BaseModel, Field
 
 
 # schema definitions ==========================================================
