@@ -16,8 +16,7 @@ class PatentMetaData(BaseModel):
     id: Union[str, None] = Field(
         None, 
         title="uri for probable patent document request",
-        description=\
-            "string containing a uri of the form 'patent/<patent_number>/<language_code>'",
+        description="string containing a uri of the form 'patent/<patent_number>/<language_code>'",
         regex=r"patent/[A-Z]{2}[A-Z0-9]+/[a-z]{2}"
     )
 
