@@ -71,9 +71,12 @@ def get_result_response(
         - uses the `requests.Session` object to make a blocking http call or
         creates one if the `blocking_session` keyword argument is None
     """
+    __close_session: bool = False
+
     url: str = build_result_by_id_url(id_url)
     if blocking_session is None:
         blocking_session = RequestsSession()
+        __close_session = True
     try:
         response: RequestsResponse = blocking_session.get(url, allow_redirects=False)
     except RequestsConnectionError as connection_error:
@@ -82,7 +85,8 @@ def get_result_response(
     else:
         return response
     finally:
-        blocking_session.close()
+        if __close_session:
+            blocking_session.close()
 
 
 def get_parse_response(
@@ -102,9 +106,12 @@ def get_parse_response(
         - uses the `requests.Session` object to make a blocking http call or
         creates one if the `blocking_session` keyword argument is None
     """
+    __close_session: bool = False
+
     url: str = build_parse_by_text_url(text)
     if blocking_session is None:
         blocking_session = RequestsSession()
+        __close_session = True
     try:
         response: RequestsResponse = blocking_session.get(url, allow_redirects=False)
     except RequestsConnectionError as connection_error:
@@ -113,4 +120,5 @@ def get_parse_response(
     else:
         return response
     finally:
-        blocking_session.close()
+        if __close_session:
+            blocking_session.close()
