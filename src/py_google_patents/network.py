@@ -1,10 +1,9 @@
 r""" py_google_patents.network module """
 
-
 # importing standard modules ==================================================
 from typing import Union, Optional, List
-import urllib.parse, logging
-
+import logging
+import urllib.parse
 
 # importing third-party modules ===============================================
 from aiohttp import ClientSession
@@ -15,12 +14,10 @@ from pydantic import BaseModel, Field
 class PatentMetaData(BaseModel):
     r""" model representing a single result id from patents.google.com/xhr/parse """
 
-
     id: Union[str, None] = Field(
-        None, 
+        None,
         title="uri for probable patent document request",
-        description=\
-            "string containing a uri of the form 'patent/<patent_number>/<language_code>'"
+        description="string containing a uri of the form 'patent/<patent_number>/<language_code>'"
     )
 
     number: Union[str, None] = Field(
@@ -30,24 +27,21 @@ class PatentMetaData(BaseModel):
     )
 
     title: str = Field(
-        "",     # default empty string
+        "",  # default empty string
         title="title of the patent document",
         description="string containing the title of the patent document"
     )
 
-
-    pass # end of _PatentMetaData
+    pass  # end of PatentMetaData
 
 
 class GoogleParsePatentResult(BaseModel):
     r""" model representing a single result id, if received, from 
     patents.google.com/xhr/parse """
 
-
     result: PatentMetaData
 
-
-    pass # end of GoogleParsePatentResult
+    pass  # end of GoogleParsePatentResult
 
 
 class GoogleParseQueryResult(BaseModel):
@@ -59,7 +53,7 @@ class GoogleParseQueryResult(BaseModel):
         description="string containing formatted uri with the query keywords"
     )
 
-    pass # end of GoogleParseQueryResult
+    pass  # end of GoogleParseQueryResult
 
 
 class GoogleParseResponse(BaseModel):
@@ -72,41 +66,36 @@ class GoogleParseResponse(BaseModel):
 
     results: Optional[
         Union[
-            List[GoogleParsePatentResult], 
+            List[GoogleParsePatentResult],
             List[GoogleParseQueryResult]
         ]
     ]
 
-    pass # end of GoogleParseResponse
+    pass  # end of GoogleParseResponse
 
 
 # method definitions ==========================================================
 class AsyncNetworkInterface:
     r""" class serving as an asynchronous network interface """
 
-
     base_url: str = "https://patents.google.com/xhr"
 
-
     def __init__(
-        self, 
-        http_client: ClientSession, 
-        logger: logging.Logger = None
-        ):
+            self,
+            http_client: ClientSession,
+            logger: logging.Logger = None
+    ):
         self._http_client: ClientSession = http_client
         self._logger: logging.Logger = logger \
             if logger is not None \
-                else logging.getLogger("network_interface")
+            else logging.getLogger("network_interface")
         return
 
-    
     def getHttpClient(self) -> ClientSession:
         return self._http_client
-    
 
     def getLogger(self) -> logging.Logger:
         return self._logger
-        
 
     async def getResult(self, id_url: str) -> str:
         r""" Instance Method - Get Result 
@@ -123,13 +112,12 @@ class AsyncNetworkInterface:
         url: str = "{}/result?id={}".format(
             self.base_url, urllib.parse.quote(id_url, safe="")
         )
-        async with self.getHttpClient()\
-            .get(url, allow_redirects=False) as response:
+        async with self.getHttpClient() \
+                .get(url, allow_redirects=False) as response:
             self.getLogger().debug(response.headers)
             document_as_text: str = await response.text()
-        
+
         return document_as_text
-    
 
     async def getParse(self, text: str) -> GoogleParseResponse:
         r""" Instance Method - Get Parse
@@ -144,14 +132,13 @@ class AsyncNetworkInterface:
         url: str = "{}/parse?text={}&cursor={}&exp=".format(
             self.base_url, urllib.parse.quote(text, safe="()"), len(text)
         )
-        async with self.getHttpClient()\
-            .get(url, allow_redirects=False) as response:
+        async with self.getHttpClient() \
+                .get(url, allow_redirects=False) as response:
             self.getLogger().debug(response.headers)
             result: GoogleParseResponse = GoogleParseResponse(
-                ** await response.json()
+                **await response.json()
             )
 
         return result
 
-
-    pass # end of AsyncNetworkInterface
+    pass  # end of AsyncNetworkInterface

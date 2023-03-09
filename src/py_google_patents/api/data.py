@@ -6,7 +6,6 @@ from typing import Dict, Any
 
 
 # importing custom modules ====================================================
-from ..common.config import getLibraryLogger
 from ..models.response_models import GoogleParseResponse, GooglePatentResponse
 from ..core.network import http_get_parse_endpoint_response, \
     http_get_result_endpoint_response
