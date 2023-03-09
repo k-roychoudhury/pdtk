@@ -1,1 +1,0 @@
-r""" py_google_patents.common.error module """

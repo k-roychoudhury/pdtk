@@ -27,9 +27,7 @@ def convert_datetime_to_gmt(dt: datetime) -> str:
 
 def configure_module_logger() -> None:
     r""" configures the root logger for the whole module """
-    formatter: logging.Formatter = logging.Formatter(
-        # "%(levelname):[%(asctime)s]:%(filename):%(module):%(funcName):Line %(lineno): %(message)s"
-    )
+    formatter: logging.Formatter = logging.Formatter()
     stream_handler: logging.StreamHandler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
 
@@ -65,7 +63,7 @@ class OrjsonModel(BaseModel):
         json_encoders = {datetime: convert_datetime_to_gmt}  # method for customer JSON encoding of datetime fields
 
     @root_validator()
-    def set_null_microseconds(cls, data: dict) -> dict:
+    def set_null_microseconds(cls, data: dict) -> dict:  # noqa
         r""" Drops microseconds in all the datetime field values. """
         datetime_fields = {
             k: v.replace(microsecond=0)

@@ -10,7 +10,7 @@ from requests import (
     ConnectionError as RequestsConnectionError
 )
 
-from ..config import get_module_logger
+from py_google_patents.config import get_module_logger
 
 # module variables ============================================================
 logger: logging.Logger = get_module_logger().getChild(__name__)
@@ -22,7 +22,7 @@ def build_result_by_id_url(id_url: str) -> str:
     r"""
     Method: Build Result By Id Url
     - arguments:
-        - `id_url`: a string representing a google patent URL
+        - `id_url`: a string representing a Google patent URL
         example: 'patent/US9145048B2/en'
     - returns:
         - a URL string
@@ -39,7 +39,7 @@ def build_parse_by_text_url(text: str) -> str:
     r"""
     Method: Build Parse By Text Url
     - arguments:
-        - `text`: strings input in the google patents search box
+        - `text`: strings input in the Google patents search box
     - returns:
         - a URL string
     """
@@ -54,12 +54,12 @@ def build_parse_by_text_url(text: str) -> str:
 
 
 def get_result_response(
-        id_url: str, *args, blocking_session: RequestsSession | None = None
+        id_url: str, blocking_session: RequestsSession | None = None
 ) -> RequestsResponse:
     r"""
     Method - Get Result Response
     - arguments:
-        - `id_url`: a string representing a google patent URL
+        - `id_url`: a string representing a Google patent URL
             - example: 'patent/US9145048B2/en'
     - keyword arguments:
         - `blocking_session`: an object of type `requests.Session` or None
@@ -86,12 +86,12 @@ def get_result_response(
 
 
 def get_parse_response(
-    text: str, *args, blocking_session: RequestsSession | None = None
+    text: str, blocking_session: RequestsSession | None = None
 ) -> RequestsResponse:
     r"""
     Method - Get Parse Response
     - arguments:
-        - `text`: strings input in the google patents search box
+        - `text`: strings input in the Google patents search box
     - keyword arguments:
         - `blocking_session`: an object of type `requests.Session` or None
     - returns:

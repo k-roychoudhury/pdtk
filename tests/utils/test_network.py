@@ -5,7 +5,6 @@ import pytest
 
 
 # test definitions ============================================================
-@pytest.mark.skip
 @pytest.mark.parametrize("sample_id", ["patent/US9145048B2/en"])
 def test_get_result_response(sample_id: str) -> None:
     from py_google_patents.utils.network import get_result_response

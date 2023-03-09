@@ -19,7 +19,7 @@ from ..models.response_models import GoogleParseResponse, GooglePatentResponse
 def parse_parse_endpoint_response_data(
     data: Dict[str, Any]
     ) -> GoogleParseResponse:
-    r""" Functional Requirement - PARSE PARSE ENDPOINT RESPONSE DATA
+    r""" Functional Requirement - PARSE ENDPOINT RESPONSE DATA
     - arguments:
         - data: json returned by the '/xhr/parse' endpoint
     - returns:
