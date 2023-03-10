@@ -9,6 +9,11 @@ from requests import (
     Response as RequestsResponse,
     ConnectionError as RequestsConnectionError
 )
+from aiohttp import (
+    ClientSession as AsyncSession,
+    ClientResponse as AsyncResponse,
+    ClientConnectionError as AsyncConnectionError
+)
 
 from ..config import get_module_logger
 
@@ -29,7 +34,8 @@ def build_result_by_id_url(id_url: str) -> str:
     """
     params: Dict[str, str] = {"id": id_url}
     url: str = "{}/result?{}".format(
-        google_patents_api_base_url, urlencode(params, safe="", quote_via=quote)
+        google_patents_api_base_url,
+        urlencode(params, safe="", quote_via=quote)
     )
     logger.debug("constructed result id url: '{}'".format(url))
     return url
@@ -47,22 +53,23 @@ def build_parse_by_text_url(text: str) -> str:
         "text": text, "cursor": len(text), "exp": ""
     }
     url: str = "{}/parse?{}".format(
-        google_patents_api_base_url, urlencode(params, safe="()", quote_via=quote)
+        google_patents_api_base_url,
+        urlencode(params, safe="()", quote_via=quote)
     )
     logger.debug("constructed parse text url: '{}'".format(url))
     return url
 
 
+# -----------------------------------------------------------------------------
 def get_result_response(
-        id_url: str, blocking_session: RequestsSession | None = None
+    id_url: str, blocking_session: RequestsSession
 ) -> RequestsResponse:
     r"""
     Method - Get Result Response
     - arguments:
         - `id_url`: a string representing a Google patent URL
             - example: 'patent/US9145048B2/en'
-    - keyword arguments:
-        - `blocking_session`: an object of type `requests.Session` or None
+        - `blocking_session`: an object of type `requests.Session`
     - returns:
         - an object of type `requests.Response`
     - raises:
@@ -71,33 +78,28 @@ def get_result_response(
         - uses the `requests.Session` object to make a blocking http call or
         creates one if the `blocking_session` keyword argument is None
     """
-    __close_session: bool = False
-
     url: str = build_result_by_id_url(id_url)
-    if blocking_session is None:
-        blocking_session = RequestsSession()
-        __close_session = True
     try:
-        response: RequestsResponse = blocking_session.get(url, allow_redirects=False)
+        response: RequestsResponse = blocking_session.get(
+            url, allow_redirects=False
+        )
     except RequestsConnectionError as connection_error:
-        logger.critical(connection_error, exc_info=(logger.level == logging.DEBUG))
+        logger.critical(
+            connection_error, exc_info=(logger.level == logging.DEBUG)
+        )
         raise
     else:
         return response
-    finally:
-        if __close_session:
-            blocking_session.close()
 
 
 def get_parse_response(
-    text: str, blocking_session: RequestsSession | None = None
+    text: str, blocking_session: RequestsSession
 ) -> RequestsResponse:
     r"""
     Method - Get Parse Response
     - arguments:
         - `text`: strings input in the Google patents search box
-    - keyword arguments:
-        - `blocking_session`: an object of type `requests.Session` or None
+        - `blocking_session`: an object of type `requests.Session`
     - returns:
         - an object of type `requests.Response`
     - raises:
@@ -106,19 +108,76 @@ def get_parse_response(
         - uses the `requests.Session` object to make a blocking http call or
         creates one if the `blocking_session` keyword argument is None
     """
-    __close_session: bool = False
-
     url: str = build_parse_by_text_url(text)
-    if blocking_session is None:
-        blocking_session = RequestsSession()
-        __close_session = True
     try:
-        response: RequestsResponse = blocking_session.get(url, allow_redirects=False)
+        response: RequestsResponse = blocking_session.get(
+            url, allow_redirects=False
+        )
     except RequestsConnectionError as connection_error:
-        logger.critical(connection_error, exc_info=(logger.level == logging.DEBUG))
+        logger.critical(
+            connection_error, exc_info=(logger.level == logging.DEBUG)
+        )
         raise
     else:
         return response
-    finally:
-        if __close_session:
-            blocking_session.close()
+
+
+# ASYNC methods ===============================================================
+async def get_result_response_async(
+    id_url: str, async_session: AsyncSession
+) -> AsyncResponse:
+    r"""
+    Method - Get Result Response Async
+    - arguments:
+        - `id_url`: a string representing a Google patent URL
+            - example: 'patent/US9145048B2/en'
+        - `async_session`: an object of type `aiohttp.ClientSession`
+    - returns:
+        - an object of type `aiohttp.ClientResponse`
+    - raises:
+        - `aiohttp.ClientConnectionError`
+    - notes:
+        - uses the `aiohttp.ClientSession` object to make an async http call
+    """
+    url: str = build_result_by_id_url(id_url)
+    try:
+        result_async_response: AsyncResponse = await async_session.get(
+            url, allow_redirects=False
+        )
+    except AsyncConnectionError as connection_error:
+        logger.critical(
+            connection_error, exc_info=(logger.level == logging.DEBUG)
+        )
+        raise
+    else:
+        return result_async_response
+
+
+async def get_parse_response_async(
+    text: str, async_session: AsyncSession
+) -> AsyncResponse:
+    r"""
+    Method - Get Parse Response Async
+    - arguments:
+        - `id_url`: a string representing a Google patent URL
+            - example: 'patent/US9145048B2/en'
+        - `async_session`: an object of type `aiohttp.ClientSession`
+    - returns:
+        - an object of type `aiohttp.ClientResponse`
+    - raises:
+        - `aiohttp.ClientConnectionError`
+    - notes:
+        - uses the `aiohttp.ClientSession` object to make an async http call
+    """
+    url: str = build_parse_by_text_url(text)
+    try:
+        result_async_response: AsyncResponse = await async_session.get(
+            url, allow_redirects=False
+        )
+    except AsyncConnectionError as connection_error:
+        logger.critical(
+            connection_error, exc_info=(logger.level == logging.DEBUG)
+        )
+        raise
+    else:
+        return result_async_response
