@@ -31,7 +31,10 @@ def test_get_result_response(sample_id: str, sync_client_session: Session) -> No
     return None
 
 
-@pytest.mark.parametrize("sample_text", ["hybrid engine", "US91450"])
+@pytest.mark.parametrize(
+    "sample_text",
+    ["hybrid engine", "US91450", "213123xvds325341", "US9567832 hybrid"]
+)
 def test_get_parse_response(
     sample_text: str, sync_client_session: Session
 ) -> None:

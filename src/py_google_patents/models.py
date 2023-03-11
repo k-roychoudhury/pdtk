@@ -59,10 +59,13 @@ class GoogleParseResponse(GlobalBaseModel):
     r""" model defining the response received from patents.google.com/xhr/parse """
 
     error_no_patents_found: bool = Field(
-        False,
+        ...,
         title="boolean indicating if no patents can be recommended"
     )
 
-    results: List[GoogleParsePatentResult | GoogleParseQueryResult] | None
+    results: List[GoogleParsePatentResult] | List[GoogleParseQueryResult] | None = Field(
+        None,
+        title="key containing the response from the google patent api server"
+    )
 
     pass  # end of GoogleParseResponse
