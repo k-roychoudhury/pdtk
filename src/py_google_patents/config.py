@@ -1,9 +1,13 @@
 r""" py_google_patents.config module """
 
+
+# importing standard modules ==================================================
 import logging
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+
+# importing third-party modules ===============================================
 from pydantic import BaseModel, root_validator
 import orjson
 
@@ -57,11 +61,13 @@ class OrjsonModel(BaseModel):
     serialization
     """
 
+
     class Config:
         json_loads = orjson.loads
         json_dumps = orjson_dumps
         json_encoders = {datetime: convert_datetime_to_gmt}
         # method for customer JSON encoding of datetime fields
+
 
     @root_validator()
     def set_null_microseconds(cls, data: dict) -> dict:  # noqa
@@ -73,5 +79,6 @@ class OrjsonModel(BaseModel):
         }
 
         return {**data, **datetime_fields}
+
 
     pass  # end of OrjsonModel

@@ -1,9 +1,15 @@
 r""" tests.test_api_client module """
 
+
+# importing standard modules ==================================================
 import pprint as pp
 
+
+# importing third-party modules ===============================================
 import pytest
 
+
+# importing custom modules ====================================================
 from py_google_patents.models import GoogleParseResponse
 from py_google_patents.api_client import ApiSyncClient
 

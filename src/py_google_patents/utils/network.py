@@ -1,9 +1,13 @@
 r""" py_google_patents.utils.network module """
 
+
+# importing standard modules ==================================================
 import logging
 from typing import Dict
 from urllib.parse import quote, urlencode
 
+
+# importing third-party modules ===============================================
 from requests import (
     Session as RequestsSession,
     Response as RequestsResponse,
@@ -15,7 +19,10 @@ from aiohttp import (
     ClientConnectionError as AsyncConnectionError
 )
 
+
+# importing custom modules ====================================================
 from ..config import get_module_logger
+
 
 # module variables ============================================================
 logger: logging.Logger = get_module_logger().getChild(__name__)

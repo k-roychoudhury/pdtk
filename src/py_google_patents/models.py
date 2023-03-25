@@ -1,9 +1,15 @@
 r""" py_google_patents.models module """
 
+
+# importing standard modules ==================================================
 from typing import List
 
+
+# importing third-party modules ===============================================
 from pydantic import Field
 
+
+# importing custom modules ====================================================
 from .config import OrjsonModel as GlobalBaseModel
 
 
