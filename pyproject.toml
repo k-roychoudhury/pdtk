@@ -34,7 +34,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.pytest.ini_options]
 python_files = "test*.py"
 minversion = "7.0"
-addopts = "--cov -s --tb=native -p no:doctest -p no:warnings"
+addopts = "-s --cov -vv --tb=native -p no:doctest -p no:warnings"
 norecursedirs = [
     "dist",
     "research",
