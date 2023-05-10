@@ -1,0 +1,10 @@
+# module dependencies
+requests
+aiohttp
+pydantic
+orjson
+
+# development dependencies
+pytest
+pytest-cov
+pytest-asyncio
