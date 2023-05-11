@@ -16,7 +16,7 @@ from requests import (
 
 
 # importing custom modules ====================================================
-from concepts import (
+from concepts.patent_number import (
     PatentNumber
 )
 from .config import (

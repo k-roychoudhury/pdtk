@@ -12,7 +12,7 @@ from requests import Session
 
 
 # importing custom modules ====================================================
-from concepts import PatentNumber
+from concepts.patent_number import PatentNumber
 from py_familizer import (
     FamilizerApiResponse,
     get_patent_families
@@ -41,4 +41,5 @@ def test_get_patent_families(
         patent_numbers, sync_client_session
     )
     pp.pprint(result.dict(), width=150, compact=True)
+    assert set(patent_numbers) == set(result.get_request_inputs())
     return None

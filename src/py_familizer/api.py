@@ -10,7 +10,7 @@ from requests import Session
 
 
 # importing custom modules ====================================================
-from concepts import (
+from concepts.patent_number import (
     PatentNumber
 )
 from .client import (

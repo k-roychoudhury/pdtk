@@ -18,7 +18,8 @@ from bs4 import (
 
 
 # importing custom modules ====================================================
-from concepts import PatentNumber
+from concepts.utils import extract_patent_number_tuple
+from concepts.patent_number import PatentNumber
 
 
 # model definitions ===========================================================
@@ -26,7 +27,7 @@ class FamilizerApiResponse(BaseModel):
     r""" model defining data elements of the response received from the 
     Familizer API """
 
-    payload: Dict[str, Union[List[PatentNumber], None]] = Field(...)
+    payload: Dict[PatentNumber, Union[List[PatentNumber], None]] = Field(...)
 
 
     @classmethod
@@ -53,7 +54,6 @@ class FamilizerApiResponse(BaseModel):
             .find_all("table", recursive=False)
 
         result_dict: Dict[str, Union[List[str], None]] = dict()
-
         for table in inner_table_tags:
             table_data_tags: Tuple[str, str, str, str] = \
                 tuple((item.text for item in table.find_all("td")))
@@ -73,23 +73,38 @@ class FamilizerApiResponse(BaseModel):
             else:
                 result_dict[input_patent_number] = \
                     table_data_row.strip().split(" ")
-        
+                
+        del soup
+        # ---------------------------------------------------------------------
+        new_result_map: Dict[PatentNumber, Union[List[str], None]] = dict()
         for key, value in result_dict.items():
+            
             if value is None:
                 continue
+
             else:
-                result_dict[key] = [
+                patent_number_object_list: List[PatentNumber] = [
                     PatentNumber.parse_string(item) for item in value
                 ]
-        
-        return FamilizerApiResponse.construct(payload=result_dict)
+                cc, num, kc = extract_patent_number_tuple(key)
+                new_key: Union[PatentNumber, None] = None
+                for item in patent_number_object_list:
+                    if item.patent_number == num:
+                        new_key = item
+                        break
+
+                patent_number_object_list.remove(new_key)
+                new_result_map[new_key] = patent_number_object_list
+
+        return FamilizerApiResponse.construct(payload=new_result_map)
     
 
-    def get_request_inputs(self) -> List[str]:
+    def get_request_inputs(self) -> List[PatentNumber]:
         r""" Instance Method: Get Request Inputs
         - arguments:
         - returns:
-            - a list of strings, (patent numbers), that were input to the API
+            - a list of objects of type `PatentNumber`; 
+                - that were input to the API
         """
         return [item for item in self.payload.keys()]
 
