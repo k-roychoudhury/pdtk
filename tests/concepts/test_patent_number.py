@@ -1,7 +1,4 @@
-r""" tests.concepts.test_PatentNumber module """
-
-
-# importing standard modules ==================================================
+r""" tests.concepts.test_patent_number module """
 
 
 # importing third-party modules ===============================================
@@ -10,7 +7,7 @@ from pydantic import ValidationError
 
 
 # importing custom modules ====================================================
-from concepts import PatentNumber
+from concepts.patent_number import PatentNumber
 
 
 # test methods ================================================================
