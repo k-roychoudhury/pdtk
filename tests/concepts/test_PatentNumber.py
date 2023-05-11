@@ -2,13 +2,11 @@ r""" tests.concepts.test_PatentNumber module """
 
 
 # importing standard modules ==================================================
-from typing import List
-import pprint as pp
 
 
 # importing third-party modules ===============================================
 import pytest
-from requests import Session
+from pydantic import ValidationError
 
 
 # importing custom modules ====================================================
@@ -25,9 +23,23 @@ from concepts import PatentNumber
         "ES.2655892.T3"
     ]
 )
-def test_parse_string(formatted_patent_number: str) -> None:
+def test_parse_string_correct(formatted_patent_number: str) -> None:
     _object: PatentNumber = PatentNumber.parse_string(formatted_patent_number)
     assert type(_object) is PatentNumber
+    return None
+
+
+@pytest.mark.parametrize(
+    "unformatted_patent_number", 
+    [
+        1245676,
+        "US12/751,612"
+    ]
+)
+def test_parse_string_incorrect(unformatted_patent_number: str) -> None:
+    with pytest.raises((ValidationError, TypeError)):
+        _object: PatentNumber = PatentNumber.parse_string(unformatted_patent_number)
+        assert type(_object) is PatentNumber
     return None
 
 

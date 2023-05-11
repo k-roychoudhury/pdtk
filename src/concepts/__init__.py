@@ -19,26 +19,31 @@ from pydantic import (
 
 
 # module variables ============================================================
-patent_number_regex: str = r"([A-Z]{2})[- \.]*((?:[A-Z]*)[0-9]+)[- \.]*([A-Z]{0,1}[0-9]*)"
+patent_number_regex: str = \
+    r"([A-Z]{2})[- \.]*((?:[A-Z]*)[0-9]+)[- \.]*([A-Z]{0,1}[0-9]*)"
 patent_number_pattern: Pattern = compile(patent_number_regex)
 
-# ifi_ucid_regex: str = r"^([A-Z]{2})[- \.]+((?:[A-Z]*)[0-9]+)[- \.]+((?:[A-Z0-9]){1,2})$"
+# ifi_ucid_regex: str = \
+# r"^([A-Z]{2})[- \.]+((?:[A-Z]*)[0-9]+)[- \.]+((?:[A-Z0-9]){1,2})$"
 # ifi_ucid_pattern: Pattern = compile(ifi_ucid_regex)
 
 
 # type definitions ============================================================
 class PatentNumber(BaseModel):
-    r""" class representing a 'Patent Number' and associated methods and concepts """
+    r""" class representing a 'Patent Number' and associated methods and 
+    concepts """
 
     country_code: str = Field(..., regex=r"([A-Z]{2})")
     patent_number: str = Field(...)
     kind_code: str = Field(..., regex=r"((?:[A-Z0-9]){1,2})")
 
 
+    @classmethod
     def parse_string(
+        cls,
         probable_patent_number: str
     ) -> 'PatentNumber':
-        r""" Instance Method: Parse String
+        r""" Class Method: Parse String
         - arguments:
             - `probable_patent_number`: an object of type `str`
         - returns:
@@ -48,7 +53,8 @@ class PatentNumber(BaseModel):
             - `ValidationError`
         """
         if type(probable_patent_number) is not str:
-            type_error_msg: str = "expected type of `probable_patent_number` to be `str`"
+            type_error_msg: str = \
+                "expected type of `probable_patent_number` to be `str`"
             raise TypeError(type_error_msg)
         
         pattern_match: Union[Match, None] = patent_number_pattern.\
@@ -80,8 +86,8 @@ class PatentNumber(BaseModel):
     ) -> str:
         r""" Instance Method: To String 
         - keyword arguments:
-            - `format`: a string; representing a format string to use to build the
-            output `str` object 
+            - `format`: a string; representing a format string to use to build 
+            the output `str` object 
         - returns:
             - a string
         """
@@ -94,7 +100,9 @@ class PatentNumber(BaseModel):
     
 
     def __repr__(self) -> str:
-        __repr_str: str = "{}({})".format(self.__class__.__name__, self.to_string())
+        __repr_str: str = "{}({})".format(
+            self.__class__.__name__, self.to_string()
+        )
         return __repr_str
     
 
