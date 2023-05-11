@@ -3,6 +3,8 @@ requests
 aiohttp
 pydantic
 orjson
+lxml
+bs4
 
 # development dependencies
 pytest
