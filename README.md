@@ -1,2 +1,5 @@
-# py_google_patents
-A python module that provides an interface to access data at 'patents.google.com'
+# PDTK
+## (Patent Data Tool Kit)
+
+>A collection of python modules that interface with open patent data sources.
+>- current sources: https://patents.google.com; https://www.familyizer.com/index.html
