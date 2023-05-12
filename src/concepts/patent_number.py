@@ -2,14 +2,16 @@ r""" concepts.patent_number module """
 
 
 # importing standard modules ==================================================
-from typing import Union
+from typing import Union, Dict, Any
 from re import Match
+import logging
 
 
 # importing third-party modules ===============================================
 from pydantic import (
     BaseModel,
     Field,
+    root_validator,
     ValidationError
 )
 
@@ -20,10 +22,15 @@ from .utils import (
 )
 
 
+# module variables ============================================================
+logger: logging.Logger = logging.getLogger(__name__)
+
+
 # type definitions ============================================================
 class PatentNumber(BaseModel):
     r""" class representing a 'Patent Number' and associated methods and 
     concepts """
+
 
     country_code: str = Field(..., regex=r"([A-Z]{2})")
     patent_number: str = Field(...)
@@ -106,5 +113,32 @@ class PatentNumber(BaseModel):
     def __hash__(self) -> int:
         return hash(self.country_code + self.patent_number + self.kind_code)
 
+
+    @root_validator(skip_on_failure=True)
+    @classmethod
+    def check_epo_number(cls, values: Dict[str, Any]) -> Dict[str, Any]:
+        r""" Root Validator: Check EPO Patent Number 
+        - arguments:
+            - `values`: an object of type `dict`
+        - returns:
+            - the passed in `values` argument
+        - notes:
+            - EPO patents and published applications must have seven digits, 
+            so add lead zeros for older documents! 
+            For example, EP11234 needs to be entered as EP0011234.
+        """
+        cc: str = values.get("country_code")    # 'country_code' is an attribute
+        num: str = values.get("patent_number")  # 'patent_number' is an attribute
+        
+        if cc == "EP":
+            formatted_num: str = "{:0>7}".format(num)
+            values.update({"patent_number": formatted_num})
+            msg: str = "formatted EPO patent number from '{}' to '{}'".format(
+                num, formatted_num
+            )
+            logger.warning(msg)
+
+        return values
+    
 
     pass # end of PatentNumber

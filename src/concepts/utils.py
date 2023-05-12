@@ -25,7 +25,9 @@ def match_patent_number_pattern(__string: str) -> Union[Match[str], None]:
     return patent_number_pattern.match(__string)
 
 
-def extract_patent_number_tuple(__string: str) -> Union[Tuple[str, str, str], None]:
+def extract_patent_number_tuple(
+    __string: str
+    ) -> Union[Tuple[str, str, str], None]:
     string_match: Match[str] = match_patent_number_pattern(__string)
     if string_match is None:
         return None

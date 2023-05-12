@@ -17,7 +17,8 @@ from concepts.patent_number import PatentNumber
         "US-9145048-B2",
         "KR20120072372A",
         # "US12/751,612",
-        "ES.2655892.T3"
+        "ES.2655892.T3",
+        "EP11234A1"
     ]
 )
 def test_parse_string_correct(formatted_patent_number: str) -> None:
@@ -30,7 +31,8 @@ def test_parse_string_correct(formatted_patent_number: str) -> None:
     "unformatted_patent_number", 
     [
         1245676,
-        "US12/751,612"
+        "US12/751,612",
+        "EP11234"
     ]
 )
 def test_parse_string_incorrect(unformatted_patent_number: str) -> None:
@@ -44,18 +46,25 @@ def test_parse_string_incorrect(unformatted_patent_number: str) -> None:
     ["patent_number", "format_string", "string_output"],
     [
         (
-            PatentNumber.construct(
+            PatentNumber(
                 country_code="US", patent_number="9145048", kind_code="B2"
             ),
             "{country_code}-{patent_number}-{kind_code}",
             "US-9145048-B2"
         ),
         (
-            PatentNumber.construct(
+            PatentNumber(
                 country_code="US", patent_number="9145048", kind_code="B2"
             ),
             "{country_code}-{patent_number}",
             "US-9145048"
+        ),
+        (
+            PatentNumber(
+                country_code="EP", patent_number="11234", kind_code="A1"
+            ),
+            "{country_code}-{patent_number}-{kind_code}",
+            "EP-0011234-A1"
         )
     ]
 )
