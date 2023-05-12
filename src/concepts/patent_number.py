@@ -131,6 +131,12 @@ class PatentNumber(BaseModel):
         num: str = values.get("patent_number")  # 'patent_number' is an attribute
         
         if cc == "EP":
+            
+            # https://www.familyizer.com/index.html
+            # EPO patents and published applications must have seven digits, 
+            # so add lead zeros for older documents! 
+            # For example, EP11234 needs to be entered as EP0011234.
+
             formatted_num: str = "{:0>7}".format(num)
             values.update({"patent_number": formatted_num})
             msg: str = "formatted EPO patent number from '{}' to '{}'".format(
