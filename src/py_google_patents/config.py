@@ -2,6 +2,7 @@ r""" py_google_patents.config module """
 
 
 # importing standard modules ==================================================
+from typing import Dict, Any
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -39,18 +40,17 @@ class OrjsonModel(BaseModel):
     class Config:
         json_loads = orjson.loads
         json_dumps = orjson_dumps
-        json_encoders = {datetime: convert_datetime_to_gmt}
+        json_encoders = { datetime: convert_datetime_to_gmt }
         # method for customer JSON encoding of datetime fields
 
 
     @root_validator()
     @classmethod
-    def set_null_microseconds(cls, data: dict) -> dict:  # noqa
+    def set_null_microseconds(cls, data: Dict[str, Any]) -> Dict[str, Any]:  # noqa
         r""" Drops microseconds in all the datetime field values. """
         datetime_fields = {
-            k: v.replace(microsecond=0)
-            for k, v in data.items()
-            if isinstance(k, datetime)
+            k: v.replace(microsecond=0) \
+                for k, v in data.items() if isinstance(k, datetime)
         }
 
         return {**data, **datetime_fields}
