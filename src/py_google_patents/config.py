@@ -70,6 +70,7 @@ class OrjsonModel(BaseModel):
 
 
     @root_validator()
+    @classmethod
     def set_null_microseconds(cls, data: dict) -> dict:  # noqa
         r""" Drops microseconds in all the datetime field values. """
         datetime_fields = {

@@ -1,24 +1,30 @@
 r""" py_google_patents.api_client module """
 
+
+# importing standard modules ==================================================
 from typing import Self
 import logging
 
+
+# importing third-party modules ===============================================
 from requests import (
     Session as RequestsSession,
     Response as RequestsResponse,
     HTTPError as RequestsHTTPError
 )
 
-from .config import get_module_logger
-from .models import (
-    GoogleParseResponse
-)
+
+# importing custom modules ====================================================
 from .utils.network import (
     get_parse_response
 )
+from .models import (
+    GoogleParseResponse
+)
+
 
 # module variables ============================================================
-logger: logging.Logger = get_module_logger().getChild(__name__)
+logger: logging.Logger = logging.getLogger(__name__)
 
 
 # class definitions ===========================================================
