@@ -17,6 +17,10 @@ from aiohttp import ClientSession
 from requests import Session
 
 
+# importing custom modules ====================================================
+from py_google_patents.api_client import ApiSyncClient
+
+
 # test fixtures ===============================================================
 @pytest_asyncio.fixture
 async def async_client_session() -> ClientSession:
@@ -28,3 +32,9 @@ async def async_client_session() -> ClientSession:
 def sync_client_session() -> Session:
     with Session() as session:
         yield session
+
+
+@pytest.fixture(scope='session')
+def gp_client() -> ApiSyncClient:
+    with ApiSyncClient() as sync_client:
+        yield sync_client

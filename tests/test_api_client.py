@@ -15,12 +15,6 @@ from py_google_patents.api_client import ApiSyncClient
 
 
 # fixture definitions =========================================================
-@pytest.fixture
-def gp_client() -> ApiSyncClient:
-    with ApiSyncClient() as sync_client:
-        yield sync_client
-
-
 @pytest.mark.parametrize(
     "sample_text",
     [
