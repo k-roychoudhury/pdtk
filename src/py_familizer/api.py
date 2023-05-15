@@ -2,7 +2,8 @@ r""" py_familizer.api module """
 
 
 # importing standard modules ==================================================
-from typing import List, Union
+from typing import List
+import logging
 
 
 # importing third-party modules ===============================================
@@ -19,11 +20,15 @@ from .client import (
 )
 
 
+# module variables ============================================================
+logger: logging.Logger = logging.getLogger(__name__)
+
+
 # method definitions ==========================================================
 def get_patent_families(
-    patent_numbers: List[PatentNumber], 
+    patent_numbers: List[str | PatentNumber], 
     *args, 
-    http_session: Union[Session, None] = None
+    http_session: Session | None = None
 ) -> FamilizerApiResponse:
     r""" Module Method: Get Patent Families
     - arguments:
@@ -31,5 +36,17 @@ def get_patent_families(
     - returns:
         - an object of type `FamilizerApiResponse`
     """
+    _formatted_patent_numbers: List[PatentNumber] = list()
+    for given_arg in patent_numbers:
+        if type(given_arg) is str:
+            _formatted_patent_numbers.append(PatentNumber.parse_string(given_arg))
+        elif type(given_arg) is PatentNumber:
+            _formatted_patent_numbers.append(given_arg)
+        else:
+            incorrect_type_msg: str = \
+                "{} is not of type 'str' or 'PatentNumber'".format(repr(given_arg))
+            logger.warning(incorrect_type_msg)
+            continue
+        
     _client: FamilizerClient = FamilizerClient(http_session=http_session)
-    return _client.get_family(patent_numbers)
+    return _client.get_family(_formatted_patent_numbers)
