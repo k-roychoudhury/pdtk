@@ -1,0 +1,10 @@
+services:
+    test_pdtk:
+        build:
+            context: '../'
+        image: test_pdtk
+        container_name: test_pdtk
+
+
+# command to run
+# docker compose -f docker_compose/docker-compose.yml -p test_pdtk up
