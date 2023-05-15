@@ -4,7 +4,10 @@ r""" py_google_patents.utils.network module """
 # importing standard modules ==================================================
 import logging
 from typing import Dict
-from urllib.parse import quote, urlencode
+from urllib.parse import (
+    quote, 
+    urlencode
+)
 
 
 # importing third-party modules ===============================================
@@ -20,12 +23,8 @@ from aiohttp import (
 )
 
 
-# importing custom modules ====================================================
-from ..config import get_module_logger
-
-
 # module variables ============================================================
-logger: logging.Logger = get_module_logger().getChild(__name__)
+logger: logging.Logger = logging.getLogger(__name__)
 google_patents_api_base_url: str = "https://patents.google.com/xhr"
 
 

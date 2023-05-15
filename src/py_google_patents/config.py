@@ -2,18 +2,17 @@ r""" py_google_patents.config module """
 
 
 # importing standard modules ==================================================
-import logging
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 
 # importing third-party modules ===============================================
-from pydantic import BaseModel, root_validator
+from pydantic import (
+    BaseModel, 
+    root_validator
+)
 import orjson
 
-
-# module variables ============================================================
-module_logger: logging.Logger | None = None
 
 
 # method definitions ==========================================================
@@ -27,31 +26,6 @@ def convert_datetime_to_gmt(dt: datetime) -> str:
         dt = dt.replace(tzinfo=ZoneInfo("UTC"))
 
     return dt.strftime("%Y-%m-%dT%H:%M:%S%z")
-
-
-def configure_module_logger() -> None:
-    r""" configures the root logger for the whole module """
-    formatter: logging.Formatter = logging.Formatter()
-    stream_handler: logging.StreamHandler = logging.StreamHandler()
-    stream_handler.setFormatter(formatter)
-
-    global module_logger
-    module_logger = logging.getLogger("py_google_patents")
-    module_logger.addHandler(stream_handler)
-    module_logger.setLevel(logging.DEBUG)
-
-    module_logger.debug("configured '{}' logger".format(module_logger.name))
-
-    return None
-
-
-def get_module_logger() -> logging.Logger:
-    r""" returns the global `module_logger` """
-    global module_logger
-    if module_logger is None:
-        configure_module_logger()
-        # this makes sure that the global `module_logger` is initialized
-    return module_logger
 
 
 # class definitions ===========================================================
