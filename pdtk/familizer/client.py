@@ -20,7 +20,8 @@ from ..concepts.patent_number import (
     PatentNumber
 )
 from ..config import (
-    BASE_URL_FAMILIZER
+    BASE_URL_FAMILIZER,
+    get_http_session
 )
 from .models import (
     FamilizerApiResponse
@@ -29,7 +30,6 @@ from .models import (
 
 # module variables ============================================================
 logger: logging.Logger = logging.getLogger(__name__)
-module_http_session: Session = Session()
 
 
 # class definitions ===========================================================
@@ -42,10 +42,11 @@ class FamilizerClient(object):
     def __init__(
         self, 
         *args, 
-        http_session: Union[Session, None] = None
-    ) -> None:
-        self._session: Session = module_http_session \
+        http_session: Session | None = None
+    ):
+        self._session: Session = get_http_session() \
             if http_session is None else http_session
+        
         pass
 
 
@@ -60,7 +61,6 @@ class FamilizerClient(object):
         r""" Instance Private Method: Get Familizer Response 
         - arguments:
             - `patent_numbers`: a list of strings; representing patent numbers
-            - `http_session`: an object of type `requests.Session`
         - raises:
             - `ConnectionError`
             - `HTTPError`
