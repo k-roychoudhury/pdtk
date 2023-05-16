@@ -2,12 +2,12 @@ r""" tests.conftest module """
 
 
 # importing standard modules ==================================================
-import sys
-from os.path import dirname, join
-# adding the 'src' directory to path - HACK
-sys.path.append(
-    join(dirname(dirname(__file__)), "src")
-)
+# import sys
+# from os.path import dirname, join
+# # adding the 'src' directory to path - HACK
+# sys.path.append(
+#     join(dirname(dirname(__file__)), "src")
+# )
 
 
 # importing third-party modules ===============================================
@@ -18,7 +18,7 @@ from requests import Session
 
 
 # importing custom modules ====================================================
-from py_google_patents.api_client import ApiSyncClient
+from pdtk.google_patents.client import GooglePatentsClient
 
 
 # test fixtures ===============================================================
@@ -35,6 +35,6 @@ def sync_client_session() -> Session:
 
 
 @pytest.fixture(scope='session')
-def gp_client() -> ApiSyncClient:
-    with ApiSyncClient() as sync_client:
+def gp_client() -> GooglePatentsClient:
+    with GooglePatentsClient() as sync_client:
         yield sync_client

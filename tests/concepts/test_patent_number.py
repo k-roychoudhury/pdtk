@@ -7,7 +7,7 @@ from pydantic import ValidationError
 
 
 # importing custom modules ====================================================
-from concepts.patent_number import PatentNumber
+from pdtk.concepts.patent_number import PatentNumber
 
 
 # test methods ================================================================

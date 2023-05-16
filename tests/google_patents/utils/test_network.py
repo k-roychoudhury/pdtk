@@ -1,4 +1,4 @@
-r""" tests.py_google_patents.utils.test_network module """
+r""" tests.google_patents.utils.test_network module """
 
 
 # importing third-party modules ===============================================
@@ -8,7 +8,7 @@ from requests import Session
 
 
 # importing custom modules ====================================================
-from py_google_patents.utils.network import (
+from pdtk.google_patents.utils.network import (
     get_result_response,
     get_parse_response,
     get_result_response_async,

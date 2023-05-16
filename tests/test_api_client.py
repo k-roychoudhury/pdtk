@@ -10,8 +10,8 @@ import pytest
 
 
 # importing custom modules ====================================================
-from py_google_patents.models import GoogleParseResponse
-from py_google_patents.api_client import ApiSyncClient
+from pdtk.google_patents.models import GoogleParseResponse
+from pdtk.google_patents.client import GooglePatentsClient
 
 
 # fixture definitions =========================================================
@@ -24,7 +24,7 @@ from py_google_patents.api_client import ApiSyncClient
         "US9567832 hybrid"
     ]
 )
-def test_text_query(sample_text: str, gp_client: ApiSyncClient) -> None:
+def test_text_query(sample_text: str, gp_client: GooglePatentsClient) -> None:
     parse_resp: GoogleParseResponse = gp_client.text_query(sample_text)
     pp.pprint(parse_resp.dict(), width=150, compact=True)
     return None

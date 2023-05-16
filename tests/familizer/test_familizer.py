@@ -1,4 +1,4 @@
-r""" tests.py_familizer.test_familizer module """
+r""" tests.familizer.test_familizer module """
 
 
 # importing standard modules ==================================================
@@ -12,8 +12,8 @@ from requests import Session
 
 
 # importing custom modules ====================================================
-from concepts.patent_number import PatentNumber
-from py_familizer import (
+from pdtk.concepts.patent_number import PatentNumber
+from pdtk.familizer import (
     FamilizerApiResponse,
     get_patent_families
 )
