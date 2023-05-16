@@ -23,9 +23,14 @@ from aiohttp import (
 )
 
 
+# importing custom modules ====================================================
+from ...config import (
+    BASE_URL_GOOGLE_PATENTS
+)
+
+
 # module variables ============================================================
 logger: logging.Logger = logging.getLogger(__name__)
-google_patents_api_base_url: str = "https://patents.google.com/xhr"
 
 
 # method definitions ==========================================================
@@ -40,7 +45,7 @@ def build_result_by_id_url(id_url: str) -> str:
     """
     params: Dict[str, str] = {"id": id_url}
     url: str = "{}/result?{}".format(
-        google_patents_api_base_url,
+        BASE_URL_GOOGLE_PATENTS,
         urlencode(params, safe="", quote_via=quote)
     )
     logger.debug("constructed result id url: '{}'".format(url))
@@ -59,7 +64,7 @@ def build_parse_by_text_url(text: str) -> str:
         "text": text, "cursor": len(text), "exp": ""
     }
     url: str = "{}/parse?{}".format(
-        google_patents_api_base_url,
+        BASE_URL_GOOGLE_PATENTS,
         urlencode(params, safe="()", quote_via=quote)
     )
     logger.debug("constructed parse text url: '{}'".format(url))

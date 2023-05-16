@@ -19,8 +19,8 @@ from requests import (
 from ..concepts.patent_number import (
     PatentNumber
 )
-from .config import (
-    FAMILIZER_BASE_URL
+from ..config import (
+    BASE_URL_FAMILIZER
 )
 from .models import (
     FamilizerApiResponse
@@ -86,7 +86,7 @@ class FamilizerClient(object):
 
         try:
             response: Response = self._session.post(
-                FAMILIZER_BASE_URL, data=payload, headers=headers
+                BASE_URL_FAMILIZER, data=payload, headers=headers
             )
             response.raise_for_status()
 
