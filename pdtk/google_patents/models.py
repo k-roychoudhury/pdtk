@@ -10,7 +10,7 @@ from pydantic import Field
 
 
 # importing custom modules ====================================================
-from .config import OrjsonModel as GlobalBaseModel
+from ..models import OrjsonModel as GlobalBaseModel
 
 
 # model definitions ===========================================================

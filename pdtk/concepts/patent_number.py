@@ -9,7 +9,6 @@ import logging
 
 # importing third-party modules ===============================================
 from pydantic import (
-    BaseModel,
     Field,
     root_validator,
     ValidationError
@@ -17,6 +16,7 @@ from pydantic import (
 
 
 # importing custom modules ====================================================
+from ..models import OrjsonModel as GlobalBaseModel
 from .utils import (
     match_patent_number_pattern
 )
@@ -27,7 +27,7 @@ logger: logging.Logger = logging.getLogger(__name__)
 
 
 # type definitions ============================================================
-class PatentNumber(BaseModel):
+class PatentNumber(GlobalBaseModel):
     r""" class representing a 'Patent Number' and associated methods and 
     concepts """
 

@@ -1,4 +1,4 @@
-r""" pdtk.google_patents.config module """
+r""" pdtk.models module """
 
 
 # importing standard modules ==================================================
@@ -32,8 +32,7 @@ def convert_datetime_to_gmt(dt: datetime) -> str:
 # class definitions ===========================================================
 class OrjsonModel(BaseModel):
     r"""
-    py_google_patents global pydantic `BaseModel`. utilizes `orjson` for JSON
-    serialization
+    pdtk's global pydantic `BaseModel`. utilizes `orjson` for JSON serialization
     """
 
 

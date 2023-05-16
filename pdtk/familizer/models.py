@@ -2,12 +2,16 @@ r""" pdtk.familizer.models module """
 
 
 # importing standard modules ==================================================
-from typing import List, Union, Dict, Tuple
+from typing import (
+    List, 
+    Union, 
+    Dict, 
+    Tuple
+)
 
 
 # importing third-party modules ===============================================
 from pydantic import (
-    BaseModel,
     Field
 )
 from bs4 import (
@@ -20,10 +24,11 @@ from bs4 import (
 # importing custom modules ====================================================
 from ..concepts.utils import extract_patent_number_tuple
 from ..concepts.patent_number import PatentNumber
+from ..models import OrjsonModel as GlobalBaseModel
 
 
 # model definitions ===========================================================
-class FamilizerApiResponse(BaseModel):
+class FamilizerApiResponse(GlobalBaseModel):
     r""" model defining data elements of the response received from the 
     Familizer API """
 
