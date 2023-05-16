@@ -18,8 +18,8 @@ from bs4 import (
 
 
 # importing custom modules ====================================================
-from concepts.utils import extract_patent_number_tuple
-from concepts.patent_number import PatentNumber
+from ..concepts.utils import extract_patent_number_tuple
+from ..concepts.patent_number import PatentNumber
 
 
 # model definitions ===========================================================
