@@ -23,13 +23,9 @@ from requests import (
 
 
 # importing custom modules ====================================================
-from ..config import (
-    BASE_URL_GOOGLE_PATENTS,
-    get_http_session
-)
-from .models import (
-    GoogleParseResponse
-)
+from ..config import BASE_URL_GOOGLE_PATENTS
+from ..globals import get_http_session
+from .models import GoogleParseResponse
 
 
 # module variables ============================================================

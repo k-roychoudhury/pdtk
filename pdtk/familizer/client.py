@@ -16,16 +16,10 @@ from requests import (
 
 
 # importing custom modules ====================================================
-from ..concepts.patent_number import (
-    PatentNumber
-)
-from ..config import (
-    BASE_URL_FAMILIZER,
-    get_http_session
-)
-from .models import (
-    FamilizerApiResponse
-)
+from ..concepts.patent_number import PatentNumber
+from ..config import BASE_URL_FAMILIZER
+from ..globals import get_http_session
+from .models import FamilizerApiResponse
 
 
 # module variables ============================================================
