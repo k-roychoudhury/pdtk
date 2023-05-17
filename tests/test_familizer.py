@@ -20,7 +20,6 @@ from pdtk.familizer import (
 
 
 # test methods ================================================================
-@pytest.mark.skip
 @pytest.mark.parametrize(
     "patent_numbers", 
     [

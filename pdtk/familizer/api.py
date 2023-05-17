@@ -47,6 +47,6 @@ def get_patent_families(
                 "{} is not of type 'str' or 'PatentNumber'".format(repr(given_arg))
             logger.warning(incorrect_type_msg)
             continue
-        
-    _client: FamilizerClient = FamilizerClient(http_session=http_session)
-    return _client.get_family(_formatted_patent_numbers)
+    
+    with FamilizerClient(http_session=http_session) as _client:
+        return _client.get_family(_formatted_patent_numbers)

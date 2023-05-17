@@ -2,7 +2,11 @@ r""" pdtk.familizer.client module """
 
 
 # importing standard modules ==================================================
-from typing import List, Dict, Union
+from typing import (
+    Self,
+    List, 
+    Dict
+)
 import logging
 
 
@@ -44,8 +48,12 @@ class FamilizerClient(object):
         pass
 
 
-    def __repr__(self) -> str:
-        return f"{self.__class__.__name__}()"
+    def __enter__(self) -> Self:
+        return self
+
+
+    def __exit__(self, exc_type, exc_val, exc_tb) -> Self:
+        return self
     
 
     def __get_familizer_response__(
