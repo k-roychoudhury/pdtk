@@ -23,9 +23,13 @@ from requests import (
 
 
 # importing custom modules ====================================================
+from ..concepts.patent_number import PatentNumber
 from ..config import BASE_URL_GOOGLE_PATENTS
 from ..globals import get_http_session
-from .models import GoogleParseResponse
+from .models import (
+    GoogleParseResponse,
+    GoogleRawPatent
+)
 
 
 # module variables ============================================================
@@ -99,6 +103,7 @@ class SyncClient(object):
         r""" Instance Private Method: Get Result Response 
         - arguments:
             - `id_url`: a string representing a Google patent URL
+                - example: 'patent/US9145048B2/en'
         - returns:
             - an object of type `requests.Response`
         - raises:
@@ -129,6 +134,34 @@ class SyncClient(object):
             return response
 
 
+    def generate_id_url(self, patent_number: str | PatentNumber) -> str:
+        r""" Instance Method: Generate Id Url
+        - arguments:
+            - `patent_number`: an object of type `str` or `PatentNumber`
+        - returns:
+            - a string; representing a google patents id url
+        - raises:
+            - `TypeError`
+        """
+        if type(patent_number) not in (str, PatentNumber):
+            type_error_msg: str = \
+                "expected type 'str' or 'PatentNumber', got '{}'".format(
+                    patent_number.__class__.__name__
+            )
+            raise TypeError(type_error_msg)
+
+        __patent_number_object: PatentNumber = patent_number
+        if type(patent_number) is str:
+            __patent_number_object = PatentNumber.parse_string(patent_number)
+        
+        id_url: str = "patent/{}/en".format(
+            __patent_number_object.to_string(
+                format="{country_code}{patent_number}{kind_code}"
+            ).strip()
+        )
+        return id_url
+    
+
     # -------------------------------------------------------------------------
     def text_query(self, query: str) -> GoogleParseResponse:
         r""" Instance Method: Text Query
@@ -147,19 +180,23 @@ class SyncClient(object):
         return parsed_object
 
 
-    def id_query(self, id_url: str):
+    def id_query(self, patent_number: str | PatentNumber) -> GoogleRawPatent:
         r""" Instance Method: Id Query
         - arguments:
             - `id_url`: a string; representing a Google patent URL
                 - example: 'patent/US9145048B2/en'
         - returns:
-            - an object of type `GoogleParseResponse`
+            - an object of type `GoogleRawPatent`
         - raises:
             - `ConnectionError`
             - `HTTPError`
         """
+        id_url: str = self.generate_id_url(patent_number)
         result_response: Response = self.__get_result_response__(id_url)
-        return result_response.content
+        parsed_patent_content: GoogleRawPatent = GoogleRawPatent.parse_bytes_content(
+            result_response.content
+        )
+        return parsed_patent_content
 
 
     pass  # end of SyncClient
