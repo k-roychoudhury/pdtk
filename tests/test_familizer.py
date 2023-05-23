@@ -24,10 +24,10 @@ from pdtk.familizer import (
     "patent_numbers", 
     [
         [   
-            PatentNumber.construct(
+            PatentNumber(
                 country_code="US", patent_number="9145048", kind_code="B2"
             ),
-            PatentNumber.construct(
+            PatentNumber(
                 country_code="JP", patent_number="2011213341", kind_code="A"
             )
         ]
