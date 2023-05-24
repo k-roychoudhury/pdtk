@@ -2,15 +2,34 @@ r""" pdtk.google_patents.models module """
 
 
 # importing standard modules ==================================================
-from typing import List
+from typing import (
+    List,
+    Dict,
+    Any
+)
 
 
 # importing third-party modules ===============================================
-from pydantic import Field
+from pydantic import (
+    Field,
+    root_validator
+)
+from bs4 import (
+    Tag,
+    ResultSet,
+    BeautifulSoup
+)
 
 
 # importing custom modules ====================================================
+from ..concepts.types import (
+    LanguageCode,
+    HtmlMarkup
+)
 from ..models import OrjsonModel as GlobalBaseModel
+from .exceptions import (
+    ContentError
+)
 
 
 # model definitions ===========================================================
@@ -75,3 +94,100 @@ class GoogleParseResponse(GlobalBaseModel):
     )
 
     pass  # end of GoogleParseResponse
+
+
+# -----------------------------------------------------------------------------
+class RawPatentAbstract(GlobalBaseModel):
+    r""" class representing an abstract data element of a raw patent document """
+
+    language_code: LanguageCode
+    load_source: str = Field(...)
+    abstract_markup: HtmlMarkup
+
+
+    @root_validator
+    @classmethod
+    def check_data_points(cls, data: Dict[str, Any]) -> Dict[str, Any]:
+        __language_code: str = data.get("language_code")
+        data.update({"language_code": __language_code.strip().upper()})
+
+        return data        
+
+
+    pass # end of RawPatentAbstract
+
+
+class GoogleRawPatent(GlobalBaseModel):
+    r""" class representing the raw patent data obtained by and 'id' query """
+
+    abstracts: List[RawPatentAbstract] = Field(...)
+
+
+    def get_abstract_by_language_code(
+        self, 
+        lang_code: LanguageCode
+    ) -> RawPatentAbstract:
+        for item in self.abstracts:
+            if item.language_code == lang_code:
+                return item
+        else:
+            key_error_message: str = \
+                "abstract with language code '{}' not found".format(lang_code)
+            raise KeyError(key_error_message)
+
+
+    def get_english_abstract(self) -> RawPatentAbstract:
+        return self.get_abstract_by_language_code("EN")
+        
+
+    # -------------------------------------------------------------------------
+    @classmethod
+    def parse_bytes_content(cls, response_content: bytes) -> 'GoogleRawPatent':
+        r""" Class Method: Parse Bytes Content
+        - arguments:
+            - `response_content`: an object of type `bytes`
+        - returns:
+            - an object of type `GoogleRawPatent`
+        - notes:
+        """
+        content_soup: BeautifulSoup = BeautifulSoup(response_content, "lxml")
+        article_tag: Tag = content_soup.find("article", {"class": "result"})
+        if article_tag is None:
+            content_error_message: str = "'response_content' does not have valid data"
+            # the 'article' tag is not present in the response received 
+            # from the google server
+            raise ContentError(content_error_message)
+
+        # ---------------------------------------------------------------------
+
+        # parse abstract markup data ------------------------------------------
+        patent_abstracts: List[RawPatentAbstract] = list()
+        section_abstract: Tag = article_tag.find(
+            "section", {"itemprop": "abstract"}
+        )
+        if section_abstract is not None:
+            raw_abstracts: ResultSet[Tag] = \
+                section_abstract.find_all_next("abstract")
+            for __abstract_element in raw_abstracts:
+                lang_code: str = __abstract_element.attrs.get("lang")
+                load_source: str =  __abstract_element.attrs.get("load-source")
+                abstract_markup: str = str(__abstract_element)
+
+                patent_abstracts.append(RawPatentAbstract(
+                    language_code=lang_code, 
+                    load_source=load_source, 
+                    abstract_markup=abstract_markup
+                ))
+            section_abstract.decompose()
+
+
+
+        # ---------------------------------------------------------------------
+        result: GoogleRawPatent = GoogleRawPatent(
+            abstracts=patent_abstracts
+        )
+
+        return result
+
+
+    pass # end of GoogleRawPatent
