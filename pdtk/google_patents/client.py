@@ -134,10 +134,16 @@ class SyncClient(object):
             return response
 
 
-    def generate_id_url(self, patent_number: str | PatentNumber) -> str:
+    def generate_id_url(
+        self, 
+        patent_number: str | PatentNumber, 
+        lang_code: str = "en"
+    ) -> str:
         r""" Instance Method: Generate Id Url
         - arguments:
             - `patent_number`: an object of type `str` or `PatentNumber`
+            - `lang_code`: a string specifuing an ISO language code
+                - default: 'en'
         - returns:
             - a string; representing a google patents id url
         - raises:
@@ -154,10 +160,11 @@ class SyncClient(object):
         if type(patent_number) is str:
             __patent_number_object = PatentNumber.parse_string(patent_number)
         
-        id_url: str = "patent/{}/en".format(
+        id_url: str = "/patent/{}/{}".format(
             __patent_number_object.to_string(
                 format="{country_code}{patent_number}{kind_code}"
-            ).strip()
+            ).strip(),
+            lang_code.strip().lower()
         )
         return id_url
     
@@ -183,19 +190,18 @@ class SyncClient(object):
     def id_query(self, patent_number: str | PatentNumber) -> GoogleRawPatent:
         r""" Instance Method: Id Query
         - arguments:
-            - `id_url`: a string; representing a Google patent URL
-                - example: 'patent/US9145048B2/en'
+            - `patent_number`: an object of type `str` or `PatentNumber`
         - returns:
             - an object of type `GoogleRawPatent`
         - raises:
             - `ConnectionError`
             - `HTTPError`
         """
-        id_url: str = self.generate_id_url(patent_number)
+        id_url: str = self.generate_id_url(patent_number, lang_code="en")
         result_response: Response = self.__get_result_response__(id_url)
-        parsed_patent_content: GoogleRawPatent = GoogleRawPatent.parse_bytes_content(
-            result_response.content
-        )
+        parsed_patent_content: GoogleRawPatent = GoogleRawPatent.\
+            parse_bytes_content(result_response.content)
+        
         return parsed_patent_content
 
 
