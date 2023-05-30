@@ -112,7 +112,8 @@ class SyncClient(object):
         - notes:
             - sends a GET request to remote application server for search results.
         """
-        params: Dict[str, str] = { "id": id_url }
+        __id_url: str = id_url.removeprefix("/")
+        params: Dict[str, str] = { "id": __id_url }
         uri: str = "{}/result".format(BASE_URL_GOOGLE_PATENTS)
 
         try:
