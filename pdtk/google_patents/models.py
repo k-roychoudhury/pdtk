@@ -135,6 +135,22 @@ class RawPatentAbstract(GlobalBaseModel):
     pass # end of RawPatentAbstract
 
 
+class RawPatentDescription(GlobalBaseModel):
+    r""" class representing a description data element of a raw patent document """
+
+    description_markup: HtmlMarkup
+
+    pass # end of RawPatentDescription
+
+
+class RawPatentClaims(GlobalBaseModel):
+    r""" class representing a claims data element of a raw patent document """
+
+    claims_markup: HtmlMarkup
+
+    pass # end of RawPatentClaims
+
+
 class DocumentReference(GlobalBaseModel):
     r""" class representing data elements of a document reference """
 
@@ -318,7 +334,9 @@ class GoogleRawPatent(GlobalBaseModel):
     publication_date: date = Field(...)
 
     titles: List[RawPatentTitle] = Field(...)
-    abstracts: List[RawPatentAbstract] = Field(...)
+    abstract: RawPatentAbstract | None = Field(...)
+    description: RawPatentDescription | None = Field(...)
+    claims: RawPatentClaims | None = Field(...)
 
     inventors: List[str] = Field(...)
     assignee_original: str = Field(...)
@@ -608,7 +626,7 @@ class GoogleRawPatent(GlobalBaseModel):
             if next_heading_tag.get_text().strip().lower() == "classifications":
                 for item in next_heading_tag.find_all_next("ul", {"itemprop": "cpcs"}):
                     classifications.append(CpcClass.parse_ul_tag(item))
-
+                    tag_after = item
 
         else:
             content_error_message: str = "'article_tag' does not have first 'dl' tag"
@@ -617,26 +635,59 @@ class GoogleRawPatent(GlobalBaseModel):
             
 
         # parse abstract markup data ------------------------------------------
-        patent_abstracts: List[RawPatentAbstract] = list()
-        section_abstract: Tag = article_tag.find(
+        section_abstract: Tag = tag_after.find(
             "section", {"itemprop": "abstract"}
         )
         if section_abstract is not None:
-            raw_abstracts: ResultSet[Tag] = \
-                section_abstract.find_all_next("abstract")
-            for __abstract_element in raw_abstracts:
-                lang_code: str = __abstract_element.attrs.get("lang")
-                load_source: str =  __abstract_element.attrs.get("load-source")
-                abstract_markup: str = str(__abstract_element)
+            abstract_tag: Tag = section_abstract.find_next("abstract")
+            lang_code: str = abstract_tag.attrs.get("lang")
+            load_source: str =  abstract_tag.attrs.get("load-source")
+            abstract_markup: str = str(abstract_tag)
 
-                patent_abstracts.append(RawPatentAbstract(
-                    language_code=lang_code, 
-                    load_source=load_source, 
-                    abstract_markup=abstract_markup
-                ))
-            section_abstract.decompose()
+            patent_abstract: RawPatentAbstract = RawPatentAbstract(
+                language_code=lang_code, 
+                load_source=load_source, 
+                abstract_markup=abstract_markup
+            )
 
+            tag_after = section_abstract
+        
+        else:
+            patent_abstract = None
+    
 
+        # description parsing ---------------------------------------------
+        section_description: Tag = tag_after.find_next(
+            "section", {"itemprop": "description"}
+        )
+        if section_description is not None:
+            description_content_div_tag: Tag = section_description.find_next(
+                "div", {"itemprop": "content"}
+            )
+
+            patent_description: RawPatentDescription = RawPatentDescription(
+                description_markup=str(description_content_div_tag)
+            )
+
+            tag_after = section_description
+        
+        else:
+            patent_description = None
+
+        # claim parsing -------------------------------------------------------
+        section_claims: Tag = tag_after.find_next(
+            "section", {"itemprop": "claims"}
+        )
+        if section_claims is not None:
+            
+            patent_claims: RawPatentClaims = RawPatentClaims(
+                claims_markup=str(section_claims)
+            )
+
+            tag_after = section_claims
+
+        else:
+            patent_claims = None
 
         # ---------------------------------------------------------------------
         result: GoogleRawPatent = GoogleRawPatent(
@@ -647,7 +698,9 @@ class GoogleRawPatent(GlobalBaseModel):
             filing_date=filing_date,
             publication_date=publication_date,
             titles=patent_titles,
-            abstracts=patent_abstracts,
+            abstract=patent_abstract,
+            description=patent_description,
+            claims=patent_claims,
             inventors=inventors,
             assignee_original=original_assignee,
             assginee_current=current_assignee,
