@@ -17,7 +17,6 @@ from pydantic import (
 )
 from bs4 import (
     Tag,
-    ResultSet,
     BeautifulSoup
 )
 
@@ -400,29 +399,6 @@ class GoogleRawPatent(GlobalBaseModel):
             # the 'article' tag is not present in the response received 
             # from the google server
             raise ContentError(content_error_message)
-        # else:
-        #     # remove all 'NavigableString' objects that are not part of a 
-        #     # leaf node in the soup
-        #     for element in article_tag.descendants:
-        #         if type(element) is Tag:
-        #             if len(element.contents) == 1 \
-        #                 and type(element.contents[0]) is NavigableString:
-        #                 # element is a leaf tag
-        #                 __tag_ref: NavigableString = element.contents[0]
-        #                 __tag_ref.replace_with(
-        #                     " ".join(
-        #                         map(lambda x: x.strip(), __tag_ref.splitlines())
-        #                     ).strip()
-        #                 )
-                        
-        #             else:
-        #                 # element is not a leaf node
-        #                 for item in element.children:
-        #                     if type(item) is NavigableString:
-        #                         item.replace_with("")
-
-
-        # ---------------------------------------------------------------------
         
         # parse title markup data ---------------------------------------------
         patent_titles: List[RawPatentTitle] = list()
@@ -524,15 +500,6 @@ class GoogleRawPatent(GlobalBaseModel):
                 "dd", {"itemprop": "otherLanguages"}
             ):
                 id_url: str = item.find_next("a").attrs.get("href")
-                # lang_code: str = item.find_next(
-                #     "span", {"itemprop": "code"}
-                # ).get_text().strip().upper()
-                
-                # other_languages.append(DocumentReference(
-                #     patent_number=PatentNumber.parse_string(id_url.split("/")[2]),
-                #     lang_code=lang_code,
-                #     id_url=id_url
-                # ))
                 other_languages.append(DocumentReference.parse_id_url(id_url))
                 tag_after = item
             
@@ -541,15 +508,6 @@ class GoogleRawPatent(GlobalBaseModel):
                 "dd", {"itemprop": "directAssociations"}
             ):
                 id_url: str = item.find_next("a").attrs.get("href")
-                # lang_code: str = item.find_next(
-                #     "span", {"itemprop": "primaryLanguage"}
-                # ).get_text().strip().upper()
-                
-                # other_versions.append(DocumentReference(
-                #     patent_number=PatentNumber.parse_string(id_url.split("/")[2]),
-                #     lang_code=lang_code,
-                #     id_url=id_url
-                # ))
                 other_languages.append(DocumentReference.parse_id_url(id_url))
                 tag_after = item
 
